@@ -7,6 +7,7 @@ public class AnimatationPlayer : MonoBehaviour
 {
     private NavMeshAgent agent;
     private Animator anim;
+    private bool isWalking = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,13 +26,21 @@ public class AnimatationPlayer : MonoBehaviour
             if(Physics.Raycast(ray, out hit))
             {
                 agent.SetDestination(hit.point);
+                anim.SetTrigger("Run");
+                isWalking = true;
             }
         }
 
-        float speed = agent.velocity.magnitude;
-        if (speed < 0.1f)
-            anim.SetFloat("Run", 0f);  // Idle
-        else
-            anim.SetFloat("Run", 1f);  // Run
+        //目的地についたら待機モーション
+        if(isWalking && !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+        {
+            if(!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
+            {
+                anim.SetTrigger("Idle");
+                isWalking = false;
+            }
+        }
+
+      
     }
 }
