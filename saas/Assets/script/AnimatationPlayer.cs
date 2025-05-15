@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
 
 public class AnimatationPlayer : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class AnimatationPlayer : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && !IsPosinterOverUIObject())
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -39,8 +40,17 @@ public class AnimatationPlayer : MonoBehaviour
                 anim.SetTrigger("Idle");
                 isWalking = false;
             }
-        }
+        } 
+    }
 
-      
+    //UIの上をタップしているか判定
+    private bool IsPosinterOverUIObject()
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
+        eventData.position = Input.mousePosition;
+
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+        return results.Count > 0;
     }
 }
