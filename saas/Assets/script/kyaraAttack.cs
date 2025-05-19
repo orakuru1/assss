@@ -30,7 +30,7 @@ public class kyaraAttack : MonoBehaviour
     public void OnpushAttack()
     {
         anim.SetTrigger("Attack");
-        if(targetSlider1 != null && !isAnimating)
+        if(targetSlider1 != null && !isAnimating)  //targetSlider1のHPが減る
         {
             float targetValue = Mathf.Max(targetSlider1.minValue, targetSlider1.value - decreaseAmout);
             StartCoroutine(AnimateSliderDecrease1(targetSlider1.value, targetValue));
