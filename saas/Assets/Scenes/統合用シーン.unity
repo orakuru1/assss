@@ -485,7 +485,7 @@ PrefabInstance:
       objectReference: {fileID: 1706763964}
     - target: {fileID: 1252486556, guid: af8eb4099af4b8f448303cf80282546e, type: 3}
       propertyPath: decreaseAmout
-      value: 0.2
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1252486556, guid: af8eb4099af4b8f448303cf80282546e, type: 3}
       propertyPath: targetSlider1
@@ -504,17 +504,17 @@ PrefabInstance:
     - target: {fileID: 2195016239474110126, guid: af8eb4099af4b8f448303cf80282546e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0973877
+      value: -0.961
       objectReference: {fileID: 0}
     - target: {fileID: 2195016239474110126, guid: af8eb4099af4b8f448303cf80282546e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1485322
+      value: 3.15
       objectReference: {fileID: 0}
     - target: {fileID: 2195016239474110126, guid: af8eb4099af4b8f448303cf80282546e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.9833946
+      value: -9.683
       objectReference: {fileID: 0}
     - target: {fileID: 2195016239474110126, guid: af8eb4099af4b8f448303cf80282546e,
         type: 3}
@@ -9417,7 +9417,7 @@ MonoBehaviour:
   isSelected: 0
   targetSlider: {fileID: 791678211}
   targetSlider1: {fileID: 1706763964}
-  decreaseAmout: 0.4
+  decreaseAmout: 0.2
   animationDuration: 0.5
 --- !u!114 &363425768
 MonoBehaviour:
@@ -12844,14 +12844,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506470194}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 2.19, y: 12.86, z: -7.03}
+  m_LocalRotation: {x: 0, y: 0.8660254, z: -0.5, w: 0}
+  m_LocalPosition: {x: 2.19, y: 12.86, z: -1.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 60, y: 180, z: 0}
 --- !u!114 &506470199
 MonoBehaviour:
   m_ObjectHideFlags: 0
