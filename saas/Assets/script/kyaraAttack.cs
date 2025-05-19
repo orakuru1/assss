@@ -17,6 +17,7 @@ public class kyaraAttack : MonoBehaviour
 
     void Start()
     {
+        
         anim = GetComponent<Animator>();
     }
 
