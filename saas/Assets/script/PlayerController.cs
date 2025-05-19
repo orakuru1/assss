@@ -19,14 +19,14 @@ public class PlayerController : MonoBehaviour
                 GridBlock clickedBlock = hit.collider.GetComponent<GridBlock>();
                 if (clickedBlock == null) return;
 
-                // ¡‘€ì‚µ‚Ä‚éƒ†ƒjƒbƒg‚¾‚¯‚ğæ“¾
+                // ï¿½ï¿½ï¿½ï¿½ï¿½ì‚µï¿½Ä‚éƒ†ï¿½jï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ“¾
                 Unit currentUnit = TurnManager.Instance.CurrentUnit;
                 if (currentUnit == null) return;
 
-                // ‚»‚Ìƒ†ƒjƒbƒg‚ÌˆÚ“®”ÍˆÍ‚É‚ ‚é‚©Šm”F
+                // ï¿½ï¿½ï¿½Ìƒï¿½ï¿½jï¿½bï¿½gï¿½ÌˆÚ“ï¿½ï¿½ÍˆÍ‚É‚ï¿½ï¿½é‚©ï¿½mï¿½F
                 if (!currentUnit.movableBlocks.Contains(clickedBlock)) return;
 
-                // Œo˜H’Tõ ¨ ƒAƒjƒ[ƒVƒ‡ƒ“•t‚«ˆÚ“®
+                // ï¿½oï¿½Hï¿½Tï¿½ï¿½ ï¿½ï¿½ ï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½tï¿½ï¿½ï¿½Ú“ï¿½
                 var path = currentUnit.gridManager.FindPath(
                 currentUnit.gridManager.GetGridPosition(currentUnit.transform.position),
                 clickedBlock.gridPos,
@@ -46,14 +46,14 @@ public class PlayerController : MonoBehaviour
 
     List<GridBlock> FindPath(Vector3 startWorld, Vector3 endWorld)
     {
-        // •K—v‚È‚ç‚±‚±‚ÅA*‚È‚Ç‚ÌŒo˜H’Tõ‚ğŒÄ‚Ô
-        // ¡‚Í‚Æ‚è‚ ‚¦‚¸1ƒ}ƒX‚¾‚¯’¼Ú•Ô‚·ƒ_ƒ~[À‘•
+        // ï¿½Kï¿½vï¿½È‚ç‚±ï¿½ï¿½ï¿½ï¿½A*ï¿½È‚Ç‚ÌŒoï¿½Hï¿½Tï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½
+        // ï¿½ï¿½ï¿½Í‚Æ‚è‚ ï¿½ï¿½ï¿½ï¿½1ï¿½}ï¿½Xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú•Ô‚ï¿½ï¿½_ï¿½~ï¿½[ï¿½ï¿½ï¿½ï¿½
         Vector2Int startPos = gridManager.GetGridPosition(startWorld);
         Vector2Int endPos = gridManager.GetGridPosition(endWorld);
 
         List<GridBlock> dummyPath = new List<GridBlock>();
 
-        // ƒ_ƒ~[: —×Ú1ƒ}ƒX‚¾‚¯
+        // ï¿½_ï¿½~ï¿½[: ï¿½×ï¿½1ï¿½}ï¿½Xï¿½ï¿½ï¿½ï¿½
         if (Vector2Int.Distance(startPos, endPos) <= 1f)
         {
             dummyPath.Add(gridManager.GetBlock(endPos));
