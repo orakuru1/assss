@@ -1,15 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class SelectableCharacter : MonoBehaviour
 {
     [SerializeField]private GameObject player;
-    
+    [SerializeField] private GameObject StatusCanvas;
+
     private Animator anim;
+    public Animator enemyAnim;
 
     public bool isSelected = false;
     private static SelectableCharacter currentSelected = null;//現在のプレイヤーを取る必要がある。
+
+    private bool isAnimating = false;
+    
+    public Slider targetSlider; //減らす対象のスライダー
+    public Slider targetSlider1;
+    public float decreaseAmout = 1f; //ボタンを押すごとに減らす量
+    public float animationDuration = 0.5f; //アニメーションの時間（秒）
     // Start is called before the first frame update
 
     private void OnMouseDown()//プライベートでスタティックはどんな効果？　isSelectedはまだ使っていない？
@@ -29,7 +38,7 @@ public class SelectableCharacter : MonoBehaviour
             {
                 currentSelected.isSelected = false;
             }
-
+            
             currentSelected = this;
             isSelected = true;
             Debug.Log("選択しました");
@@ -46,19 +55,85 @@ public class SelectableCharacter : MonoBehaviour
 
         if (attackVector != Vector3.zero)
         {
-            Quaternion lookRotation = Quaternion.LookRotation(attackVector);
-            player.transform.rotation = Quaternion.Slerp(player.transform.rotation, lookRotation, 1f);
+            Quaternion lookRotation = Quaternion.LookRotation(attackVector);//攻撃するキャラの向き
+            player.transform.rotation = Quaternion.Slerp(player.transform.rotation, lookRotation, 1f);//プレイヤーが敵の方向を動いて向く
         }
 
-
-        
         Debug.Log($"{gameObject.name}に攻撃！");
-        anim.SetTrigger("Attack");
+        anim.SetTrigger("Attack");//攻撃アニメーションをトリガー
+
+        //anim.SetTrigger("Attack");
+        if(targetSlider1 != null && !isAnimating)
+        {
+            float targetValue = Mathf.Max(targetSlider1.minValue, targetSlider1.value - decreaseAmout);
+            StartCoroutine(AnimateSliderDecrease1(targetSlider1.value, targetValue));
+        }
     }
+    
+    public void OnAttackAnimationEnd()
+    {
+        Debug.Log("攻撃アニメーションが終了！敵をヒットさせます");
+        
+        if (anim != null)
+        {
+            enemyAnim.SetTrigger("Hit"); // 敵の「Hit」アニメーションを再生
+        }
+    }
+
+    public void OnpushHit()
+    {
+        anim.SetTrigger("Hit");
+        if (targetSlider != null && !isAnimating)
+        {
+            float targetValue = Mathf.Max(targetSlider.minValue, targetSlider.value - decreaseAmout);
+            StartCoroutine(AnimateSliderDecrease(targetSlider.value, targetValue));
+        }
+    }
+
+    private IEnumerator AnimateSliderDecrease(float startValue, float endValue)
+    {
+        isAnimating = true;
+
+        float elapsed = 0f;
+
+        while(elapsed < animationDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / animationDuration;
+            targetSlider.value = Mathf.Lerp(startValue, endValue, t);
+            yield return null;
+        }
+
+        targetSlider.value = endValue;
+        isAnimating = false;
+    }
+
+    private IEnumerator AnimateSliderDecrease1(float startValue, float endValue)
+    {
+        isAnimating = true;
+
+        float elapsed = 0f;
+
+        while(elapsed < animationDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / animationDuration;
+            targetSlider1.value = Mathf.Lerp(startValue, endValue, t);
+            yield return null;
+        }
+
+        targetSlider1.value = endValue;
+        isAnimating = false;
+    }
+
     void Start()
     {
-
         anim = player.GetComponent<Animator>();
+        if (StatusCanvas != null)
+        {
+            //StatusCanvas.SetActive(false);
+        }
+        
     }
 
     // Update is called once per frame
