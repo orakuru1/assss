@@ -6,9 +6,11 @@ public class SelectableCharacter : MonoBehaviour
 {
     [SerializeField]private GameObject player;
     [SerializeField] private GameObject StatusCanvas;
+    [SerializeField] private GameObject ClearCanvas;
 
     private Animator anim;
     public Animator enemyAnim;
+    public Animator ClearAnim;
 
     public bool isSelected = false;
     private static SelectableCharacter currentSelected = null;//現在のプレイヤーを取る必要がある。
@@ -55,7 +57,7 @@ public class SelectableCharacter : MonoBehaviour
 
         if (attackVector != Vector3.zero)
         {
-            Quaternion lookRotation = Quaternion.LookRotation(attackVector);//攻撃するキャラの向き
+            Quaternion lookRotation = Quaternion.LookRotation(attackVector);//攻撃するキャラの向きがわかる
             player.transform.rotation = Quaternion.Slerp(player.transform.rotation, lookRotation, 1f);//プレイヤーが敵の方向を動いて向く
         }
 
@@ -63,32 +65,35 @@ public class SelectableCharacter : MonoBehaviour
         anim.SetTrigger("Attack");//攻撃アニメーションをトリガー
 
         //anim.SetTrigger("Attack");
-        if(targetSlider1 != null && !isAnimating)
+    }
+
+    public void OnAttackAnimationEnd()
+    {
+        Debug.Log("攻撃アニメーションが終了！敵をヒットさせます");
+
+        if (anim != null)
+        {
+            enemyAnim.SetTrigger("Hit"); // 敵の「Hit」アニメーションを再生
+        }
+        
+        if (targetSlider1 != null && !isAnimating)
         {
             float targetValue = Mathf.Max(targetSlider1.minValue, targetSlider1.value - decreaseAmout);
             StartCoroutine(AnimateSliderDecrease1(targetSlider1.value, targetValue));
         }
     }
     
-    public void OnAttackAnimationEnd()
-    {
-        Debug.Log("攻撃アニメーションが終了！敵をヒットさせます");
-        
-        if (anim != null)
+/*
+        public void OnpushHit()
         {
-            enemyAnim.SetTrigger("Hit"); // 敵の「Hit」アニメーションを再生
+            anim.SetTrigger("Hit");
+            if (targetSlider != null && !isAnimating)
+            {
+                float targetValue = Mathf.Max(targetSlider.minValue, targetSlider.value - decreaseAmout);
+                StartCoroutine(AnimateSliderDecrease(targetSlider.value, targetValue));
+            }
         }
-    }
-
-    public void OnpushHit()
-    {
-        anim.SetTrigger("Hit");
-        if (targetSlider != null && !isAnimating)
-        {
-            float targetValue = Mathf.Max(targetSlider.minValue, targetSlider.value - decreaseAmout);
-            StartCoroutine(AnimateSliderDecrease(targetSlider.value, targetValue));
-        }
-    }
+    */
 
     private IEnumerator AnimateSliderDecrease(float startValue, float endValue)
     {
@@ -96,7 +101,7 @@ public class SelectableCharacter : MonoBehaviour
 
         float elapsed = 0f;
 
-        while(elapsed < animationDuration)
+        while (elapsed < animationDuration)
         {
             elapsed += Time.deltaTime;
             float t = elapsed / animationDuration;
@@ -123,6 +128,11 @@ public class SelectableCharacter : MonoBehaviour
         }
 
         targetSlider1.value = endValue;
+        if (targetSlider1.value <= 0)
+        {
+            ClearCanvas.SetActive(true);
+            ClearAnim.SetTrigger("Clear");
+        }
         isAnimating = false;
     }
 
