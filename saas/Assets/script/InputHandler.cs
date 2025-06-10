@@ -28,7 +28,7 @@ public class InputHandler : MonoBehaviour
     void Update()
     {
 
-
+        
         if (Input.GetMouseButtonDown(0)) // 左クリックしたら
         {
             unit = TurnManager.Instance.CurrentUnit;
@@ -50,6 +50,17 @@ public class InputHandler : MonoBehaviour
 
                 if (clickedBlock != null)
                 {
+                    Unit currentUnit = TurnManager.Instance.CurrentUnit;
+
+                    // 移動可能な範囲かチェック
+                    if (movableBlocks.Contains(clickedBlock))
+                    {
+                        Vector2Int startPos = gridManager.GetGridPosition(currentUnit.transform.position);
+                        Vector2Int goalPos = clickedBlock.gridPos;
+                        var path = gridManager.FindPath(startPos,goalPos, currentUnit);
+                        StartCoroutine(currentUnit.MoveToPath(path)); // ★ここで呼ぶ
+                    }
+
                     Debug.Log("クリックしたマス: " + gridPos);
                     // ここに移動とかハイライト処理とかを書く
                     bool canMove = movableBlocks.Exists(b => b.gridPos == clickedBlock.gridPos);
@@ -59,14 +70,15 @@ public class InputHandler : MonoBehaviour
 
                         Debug.Log("そのマスにいるユニット: " + clickedBlock.occupantUnit.name);
                         Debug.Log("そのユニットのチーム: " + clickedBlock.occupantUnit.team);
+                        Unit attacker = TurnManager.Instance.CurrentUnit;
                         Unit target = clickedBlock.occupantUnit;
 
-                        Vector2Int unitPos = gridManager.GetGridPosition(unit.transform.position);
+                        Vector2Int unitPos = gridManager.GetGridPosition(attacker.transform.position);
                         Vector2Int targetPos = clickedBlock.gridPos;
 
-                        if (gridManager.IsWithinAttackRange(unitPos, targetPos, unit.status.attackRange))
+                        if (gridManager.IsWithinAttackRange(unitPos, targetPos, attacker.status.attackRange))
                         {
-                            unit.Attack(target);
+                            attacker.Attack(target);
                             TurnManager.Instance.EndUnitTurn();
                             return;
                         }
@@ -85,7 +97,7 @@ public class InputHandler : MonoBehaviour
                         TurnManager.Instance.EndUnitTurn();
                         ClearHighlights();
                     }
-                    ShowMoveRange(unit);
+                    
 
 
                 }
@@ -124,6 +136,7 @@ public class InputHandler : MonoBehaviour
             block.Highlight(true);
             currentHighlightedBlocks.Add(block);
             movableBlocks.Add(block);
+            ShowAttackRange(unit);
         }
 
         // 範囲内にあるけど移動できない（青くなってない）ブロックに対して
@@ -136,14 +149,14 @@ public class InputHandler : MonoBehaviour
                 currentHighlightedBlocks.Add(block);
             }
         }
-        ShowAttackRange(); // 攻撃範囲表示
+         // 攻撃範囲表示
         currentBlock.isWalkable = originalWalkable;
     }
 
 
 
     //攻撃範囲の表示
-    private void ShowAttackRange()
+    private void ShowAttackRange(Unit unit)
     {
         Vector2Int unitPos = gridManager.GetGridPosition(unit.transform.position);
         List<GridBlock> allAttackableBlocks = gridManager.GetBlocksInRange(unitPos, unit.status.attackRange);
@@ -168,10 +181,18 @@ public class InputHandler : MonoBehaviour
     {
         foreach (var block in currentHighlightedBlocks)
         {
-            block.Highlight(false);
+            block.Highlight(true);
         }
         currentHighlightedBlocks.Clear();
         movableBlocks.Clear();
+    }
+
+    public void ClearAllHighlights()
+    {
+        foreach (var block in gridManager.GetAllBlocks())
+        {
+            block.ClearHighlights();
+        }
     }
 
     private void ShowUnwalkableBlocks(List<GridBlock> unwalkable)
