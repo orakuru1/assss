@@ -17,6 +17,11 @@ public class GetCanvas : MonoBehaviour
         
     }
 
+    public void Openattack()
+    {
+        canvas.enabled = !canvas.enabled; //非表示のCanvasを表示
+    }
+
     public void kyaraClick()
     {
         canvas.enabled = !canvas.enabled; //非表示のCanvasを表示

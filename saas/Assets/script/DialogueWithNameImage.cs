@@ -1,4 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class DialogueWithNameImage : MonoBehaviour
@@ -61,5 +64,16 @@ public class DialogueWithNameImage : MonoBehaviour
         }
 
         Debug.LogWarning($"キー '{current.nameKey}' に対応する名前画像がありません。");
+    }
+
+    //UIの上をタップしているか判定
+    private bool IsPosinterOverUIObject()
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
+        eventData.position = Input.mousePosition;
+
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+        return results.Count > 0;
     }
 }

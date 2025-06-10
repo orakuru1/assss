@@ -42,6 +42,11 @@ public class AnimatationPlayer : MonoBehaviour
             }
         } 
     }
+    public void OnAttackAnimationEnd()
+    {
+        // 攻撃後の処理（移動解除とか、次の行動許可とか）
+        Debug.Log("攻撃アニメが終わったよ");
+    }
 
     //UIの上をタップしているか判定
     private bool IsPosinterOverUIObject()

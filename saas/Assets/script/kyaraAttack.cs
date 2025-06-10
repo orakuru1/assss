@@ -8,10 +8,13 @@ public class kyaraAttack : MonoBehaviour
     private Animator anim;
     private bool isAnimating = false;
     
-    public Slider targetSlider; //減らす対象のスライダー
-    public Slider targetSlider1;
+    public Slider targetSlider; //防御時に減らす対象のスライダー
+    public Slider targetSlider1;//攻撃時に減らすスライダー
     public float decreaseAmout = 1f; //ボタンを押すごとに減らす量
+    public float decreaseAmout1 = 0.5f;
     public float animationDuration = 0.5f; //アニメーションの時間（秒）
+
+    public Canvas canvas; //変数
 
 
     // Start is called before the first frame update
@@ -30,21 +33,22 @@ public class kyaraAttack : MonoBehaviour
     public void OnpushAttack()
     {
         anim.SetTrigger("Attack");
+        canvas.enabled = false;
         if(targetSlider1 != null && !isAnimating)  //targetSlider1のHPが減る
         {
             float targetValue = Mathf.Max(targetSlider1.minValue, targetSlider1.value - decreaseAmout);
-            StartCoroutine(AnimateSliderDecrease1(targetSlider1.value, targetValue));
+            StartCoroutine(AnimateSliderDecrease1(targetSlider1.value, targetValue));//コルーチンを使い滑らかにスライダーを減らす
         }
     }
 
     public void OnpushHit()
     {
-        anim.SetTrigger("Hit");
-        if(targetSlider != null && !isAnimating)
+        anim.SetTrigger("Block");
+       /* if(targetSlider != null && !isAnimating)
         {
-            float targetValue = Mathf.Max(targetSlider.minValue, targetSlider.value - decreaseAmout);
+            float targetValue = Mathf.Max(targetSlider.minValue, targetSlider.value - decreaseAmout1);
             StartCoroutine(AnimateSliderDecrease(targetSlider.value, targetValue));
-        }
+        }*/
     }
 
     private IEnumerator AnimateSliderDecrease(float startValue, float endValue)
