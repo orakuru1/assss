@@ -11,6 +11,7 @@ public class Unit : MonoBehaviour
     public class UnitStatus
     {
         public string unitName = "ユニット名";
+        public int exp = 0;
         public int level = 1;
         public int maxHP = 20;
         public int currentHP = 20;
@@ -21,10 +22,14 @@ public class Unit : MonoBehaviour
         public float maxStepHeight = 0.5f;
         public int speed = 4;
         public int luck = 1;
+        //レベルアップ時に上がるステータスの倍率をキャラごとに変えれる
+        public List<float> levelUpMultipliers = new List<float> { 1f, 1.1f, 1.2f, 1.3f };
+
+        
     }
 
     public UnitStatus status = new UnitStatus();
-
+ 
     public enum Team
     {
         Player,
@@ -36,6 +41,68 @@ public class Unit : MonoBehaviour
     private bool isMoving = false;
     public List<GridBlock> movableBlocks = new List<GridBlock>();
 
+    #region  //マス効果の適用
+    private int baseMaxHP, baseCurrentHP,
+                baseAttack, baseDefense,
+                baseMoveRange, baseAttackRange,
+                baseSpeed, baseLuck;
+    private float baseMaxStepHeight;
+
+    //マス効果を受ける前のステータス
+    private void Awake()
+    {
+        baseMaxHP = status.maxHP;
+        baseCurrentHP = status.currentHP;
+        baseAttack = status.attack;
+        baseDefense = status.defense;
+        baseMoveRange = status.moveRange;
+        baseAttackRange = status.attackRange;
+        baseMaxStepHeight = status.maxStepHeight;
+        baseSpeed = status.speed;
+        baseLuck = status.luck;
+        gridManager = FindObjectOfType<GridManager>();
+    }
+
+    
+    void Update()
+    {
+        UpdateBlockEffect();
+    }
+
+    void UpdateBlockEffect()
+    {
+        Vector2Int currentPos = new Vector2Int(
+            Mathf.RoundToInt(transform.position.x),
+            Mathf.RoundToInt(transform.position.z)
+        );
+
+        GridBlock currentBlock = gridManager.GetBlock(currentPos);
+
+        // リセット
+        status.maxHP = baseMaxHP;
+        status.attack = baseAttack;
+        status.defense = baseDefense;
+        status.moveRange = baseMoveRange;
+        status.attackRange = baseAttackRange;
+        status.maxStepHeight = baseMaxStepHeight;
+        status.speed = baseSpeed;
+        status.luck = baseLuck;
+
+        // 効果を再適用
+        if (currentBlock != null)
+        {
+            switch (currentBlock.blockKinds)
+            {
+                case GridBlock.BlockKinds.sand:
+                    status.attack += 10;
+                    break;
+                case GridBlock.BlockKinds.glass:
+                    status.moveRange -= 1;
+                    break;
+            }
+        }
+    }
+    #endregion
 
     public void MoveTo(Vector3 targetPosition)
     {
@@ -56,10 +123,11 @@ public class Unit : MonoBehaviour
         }
     }
 
-    public void MoveToPath(List<GridBlock> path)
+    public IEnumerator MoveToPath(List<GridBlock> path)
     {
-        StartCoroutine(MoveAlongPath(path));
+        yield return StartCoroutine(MoveAlongPath(path));
     }
+
 
     private IEnumerator MoveAlongPath(List<GridBlock> path)
     {
@@ -91,16 +159,24 @@ public class Unit : MonoBehaviour
             finalBlock.occupantUnit = this;
         }
         TurnManager.Instance.HighlightCurrentUnitMoveRange();
+        if(finalBlock.occupantUnit == true)
+        {
+            
+            TurnManager.Instance.OnPlayerMoveComplete(); //ここで通知
+        }
+
     }
-
-
-
-
 
     public void Attack(Unit target)
     {
         int damage = Mathf.Max(status.attack - target.status.defense, 1);
         target.TakeDamage(damage);
+        status.exp += 30;
+        if(status.exp >= 100)
+        {
+            status.exp = 0;
+            LevelUp();
+        }
     }
 
     public void TakeDamage(int damage)
@@ -114,6 +190,18 @@ public class Unit : MonoBehaviour
         {
             Die();
         }
+    }
+
+    public void LevelUp()
+    {
+        status.level++;
+
+        float multiplier = status.levelUpMultipliers[Mathf.Clamp(status.level, 0, status.levelUpMultipliers.Count - 1)];
+
+        status.maxHP = Mathf.RoundToInt(baseMaxHP * multiplier);
+        status.attack = Mathf.RoundToInt(baseAttack * multiplier);
+
+        Awake(); // 新しいbaseから再適用
     }
 
     private void Die()
