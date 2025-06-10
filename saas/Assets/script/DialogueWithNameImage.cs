@@ -22,6 +22,7 @@ public class DialogueWithNameImage : MonoBehaviour
 
     public Image nameImage;         // 名前画像を表示するImage
     public Text dialogueText;       // セリフ表示用Text
+    public Canvas canva;
 
     public Line[] lines;
     public NameImageEntry[] nameImages;
@@ -31,10 +32,13 @@ public class DialogueWithNameImage : MonoBehaviour
     void Start()
     {
         ShowCurrentLine();
+        
     }
 
     void Update()
     {
+        if(canva != null && canva.enabled)
+        {
         if (Input.GetMouseButtonDown(0)) // クリックで進む
         {
             currentIndex++;
@@ -45,7 +49,9 @@ public class DialogueWithNameImage : MonoBehaviour
             else
             {
                 Debug.Log("会話終了");
+                canva.enabled = false; 
             }
+        }
         }
     }
 
