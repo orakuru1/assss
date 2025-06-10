@@ -44,10 +44,21 @@ public class kyaraAttack : MonoBehaviour
     public void OnpushHit()
     {
         anim.SetTrigger("Block");
-       /* if(targetSlider != null && !isAnimating)
+       /*if(targetSlider != null && !isAnimating)
         {
             float targetValue = Mathf.Max(targetSlider.minValue, targetSlider.value - decreaseAmout1);
             StartCoroutine(AnimateSliderDecrease(targetSlider.value, targetValue));
+        }*/
+    }
+
+    public void kenAttack()
+    {
+        anim.SetTrigger("kenAttack");
+        canvas.enabled = false;
+        /*if(targetSlider1 != null && !isAnimating)  //targetSlider1のHPが減る
+        {
+            float targetValue = Mathf.Max(targetSlider1.minValue, targetSlider1.value - decreaseAmout);
+            StartCoroutine(AnimateSliderDecrease1(targetSlider1.value, targetValue));//コルーチンを使い滑らかにスライダーを減らす
         }*/
     }
 
