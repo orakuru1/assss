@@ -21,7 +21,6 @@ public class kyaraAttack : MonoBehaviour
 
     void Start()
     {
-        
         anim = GetComponent<Animator>();
     }
 
@@ -51,18 +50,18 @@ public class kyaraAttack : MonoBehaviour
         }*/
     }
 
-    public void kenAttack()
+    public void KenAttack()
     {
         anim.SetTrigger("kenAttack");
         canvas.enabled = false;
-        /*if(targetSlider1 != null && !isAnimating)  //targetSlider1のHPが減る
+        if(targetSlider1 != null && !isAnimating)  //targetSlider1のHPが減る
         {
             float targetValue = Mathf.Max(targetSlider1.minValue, targetSlider1.value - decreaseAmout);
             StartCoroutine(AnimateSliderDecrease1(targetSlider1.value, targetValue));//コルーチンを使い滑らかにスライダーを減らす
-        }*/
+        }
     }
 
-    private IEnumerator AnimateSliderDecrease(float startValue, float endValue)
+    private IEnumerator AnimateSliderDecrease(float startValue, float endValue) //滑らかにHPスライダーをへらす
     {
         isAnimating = true;
 
@@ -92,6 +91,11 @@ public class kyaraAttack : MonoBehaviour
             float t = elapsed / animationDuration;
             targetSlider1.value = Mathf.Lerp(startValue, endValue, t);
             yield return null;
+        }
+
+        if(elapsed == animationDuration)
+        {
+            anim.SetTrigger("Die");
         }
 
         targetSlider1.value = endValue;

@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class DialogueCanva : MonoBehaviour
 {
     public Canvas dialogueCanvas; //会話Canvas
-    public GameObject statusImage;   //ステータスCanvas
+    public GameObject statusImage;   //ステータスimage
+    public GameObject AttackImage; //攻撃image
+
 
     private bool alreadyClicked = false;
 
@@ -16,6 +18,7 @@ public class DialogueCanva : MonoBehaviour
        //最初は非表示
        if(dialogueCanvas != null) dialogueCanvas.enabled = false;
        if(statusImage != null) statusImage.SetActive(false);
+       if(AttackImage != null) AttackImage.SetActive(false);
     }
 
     void OnMouseDown()
@@ -24,6 +27,7 @@ public class DialogueCanva : MonoBehaviour
 
         if(dialogueCanvas != null) dialogueCanvas.enabled = true;
         if(statusImage != null) statusImage.SetActive(true);
+        if(AttackImage != null) AttackImage.SetActive(true);
 
         alreadyClicked = true; //2回目以降表示しない
     }
