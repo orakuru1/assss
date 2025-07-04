@@ -38,6 +38,7 @@ public class TurnManager : MonoBehaviour
     public void StartNextTurn()
     {
         inputHandler.ClearAllHighlights();
+        
 
         if (turnQueue.Count == 0)
         {
@@ -46,6 +47,7 @@ public class TurnManager : MonoBehaviour
         
         CurrentUnit = turnQueue.Dequeue();
         OnTurnStart?.Invoke(CurrentUnit);;
+        InputHandler.Instance.unit = CurrentUnit;
         Debug.Log($"現在の行動ユニット: {CurrentUnit.name}（{CurrentUnit.team}）");
         // ここでUI更新やAI起動などしてもよい
         // ここで敵か味方かを判定
@@ -61,7 +63,7 @@ public class TurnManager : MonoBehaviour
             // 味方のときは入力受付など
             //inputHandler.ShowMoveRange(CurrentUnit);
 
-            HighlightCurrentUnitMoveRange(); // 必要であれば
+            //HighlightCurrentUnitMoveRange(); // 必要であれば
         }
     }
 
@@ -81,14 +83,14 @@ public class TurnManager : MonoBehaviour
         
         if (CurrentUnit != null)
         {
-            inputHandler.ShowMoveRange(CurrentUnit);
+            //inputHandler.ShowMoveRange(CurrentUnit);
         }
     }
 
     public void OnPlayerMoveComplete()
     {
         // ハイライト更新など必要であればここで
-        HighlightCurrentUnitMoveRange();
+        //HighlightCurrentUnitMoveRange();
 
         // 敵の移動処理開始
         //StartCoroutine(enemyAI.ExecuteEnemyMove(CurrentUnit, gridManager));

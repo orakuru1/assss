@@ -24,7 +24,13 @@ public class Unit : MonoBehaviour
         public int luck = 1;
         //レベルアップ時に上がるステータスの倍率をキャラごとに変えれる
         public List<float> levelUpMultipliers = new List<float> { 1f, 1.1f, 1.2f, 1.3f };
-
+        public AttackPatternBase attackPattern;
+    
+            // 攻撃範囲取得
+            public List<Vector2Int> GetAttackRange(Vector2Int currentPos)
+            {
+                return attackPattern.GetPattern(currentPos);
+            }
         
     }
 
@@ -40,6 +46,7 @@ public class Unit : MonoBehaviour
     public float moveSpeed = 2.0f;
     private bool isMoving = false;
     public List<GridBlock> movableBlocks = new List<GridBlock>();
+    private Vector3 originalPosition; // 移動前の位置
 
     #region  //マス効果の適用
     private int baseMaxHP, baseCurrentHP,
@@ -68,6 +75,17 @@ public class Unit : MonoBehaviour
     {
         UpdateBlockEffect();
     }
+    public void ResetToBase()
+    {
+        status.maxHP = baseMaxHP;
+        status.attack = baseAttack;
+        status.defense = baseDefense;
+        status.moveRange = baseMoveRange;
+        status.attackRange = baseAttackRange;
+        status.maxStepHeight = baseMaxStepHeight;
+        status.speed = baseSpeed;
+        status.luck = baseLuck;
+    }
 
     void UpdateBlockEffect()
     {
@@ -79,14 +97,7 @@ public class Unit : MonoBehaviour
         GridBlock currentBlock = gridManager.GetBlock(currentPos);
 
         // リセット
-        status.maxHP = baseMaxHP;
-        status.attack = baseAttack;
-        status.defense = baseDefense;
-        status.moveRange = baseMoveRange;
-        status.attackRange = baseAttackRange;
-        status.maxStepHeight = baseMaxStepHeight;
-        status.speed = baseSpeed;
-        status.luck = baseLuck;
+        ResetToBase();
 
         // 効果を再適用
         if (currentBlock != null)
@@ -106,6 +117,7 @@ public class Unit : MonoBehaviour
 
     public void MoveTo(Vector3 targetPosition)
     {
+        originalPosition = transform.position;
         Vector2Int currentGridPos = gridManager.GetGridPosition(transform.position);
         GridBlock currentBlock = gridManager.GetBlock(currentGridPos);
         if (currentBlock != null && currentBlock.occupantUnit == this)
@@ -215,6 +227,27 @@ public class Unit : MonoBehaviour
 
         Debug.Log($"{status.unitName} は撃破されました！");
         gameObject.SetActive(false);
+    }
+
+    public void CancelMove()
+    {
+        InputHandler.Instance.ClearHighlights();
+        InputHandler.Instance.ClearAllHighlights();
+
+        transform.position = originalPosition;
+
+        ResetToBase();
+        // occupantUnit の再登録処理も必要（重要）
+        Vector2Int gridPos = gridManager.GetGridPosition(transform.position);
+        GridBlock block = gridManager.GetBlock(gridPos);
+        if (block != null)
+        {
+            block.occupantUnit = this;
+            UpdateBlockEffect();
+        }
+        Debug.Log("移動をキャンセルしました");
+        InputHandler.Instance.ClearHighlights();
+        InputHandler.Instance.ShowMoveRange(this);
     }
 
     void Start()

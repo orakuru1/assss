@@ -82,6 +82,26 @@ public class GridManager : MonoBehaviour
         return result;
     }
 
+    public List<GridBlock> GetAttackableBlockss(Vector2Int center, AttackPatternBase pattern)
+    {
+        List<GridBlock> result = new List<GridBlock>();
+
+        foreach (var offset in pattern.relativePositions)
+        {
+            Vector2Int pos = center + offset;
+            if (gridMap.TryGetValue(pos, out GridBlock block))
+            {
+                if (block != null)
+                {
+                    result.Add(block);
+                }
+            }
+        }
+
+        return result;
+    }
+
+
 
     public void GetMovableBlocks(Vector2Int startPos, int moveRange, out List<GridBlock> walkable, out List<GridBlock> unwalkable)
     {
