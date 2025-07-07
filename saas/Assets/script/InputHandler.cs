@@ -6,18 +6,27 @@ public class InputHandler : MonoBehaviour
 {
     [SerializeField] private GridManager gridManager;
     [SerializeField] private Camera mainCamera;
-    [SerializeField] private Unit unit;
+    [SerializeField] public Unit unit;
+    
+    [SerializeField] private GameObject cursorFramePrefab;
+    private GameObject currentFrame;
 
     private List<GridBlock> currentHighlightedBlocks = new List<GridBlock>();
     public List<GridBlock> movableBlocks = new List<GridBlock>();
+    List<GridBlock> attackableBlocks = new List<GridBlock>();
     private List<Vector2Int> currentMovablePositions = new List<Vector2Int>();
+    private List<GridBlock> currentAttackableBlocks = new();
+
+    public static InputHandler Instance { get; internal set; }
+
     private void Start()
     {
+        
         unit = TurnManager.Instance.CurrentUnit;
 
         if (unit != null)
         {
-            ShowMoveRange(unit);
+            //ShowMoveRange(unit);
         }
         else
         {
@@ -25,11 +34,32 @@ public class InputHandler : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+    }
+
     void Update()
     {
 
-        
-        if (Input.GetMouseButtonDown(0)) // 左クリックしたら
+        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hit2))
+        {
+            GridBlock hoveredBlock = hit2.collider.GetComponent<GridBlock>();
+            if (hoveredBlock != null)
+            {Vector2Int gridPos = hoveredBlock.gridPos;
+                if (currentFrame == null)
+                {
+                    currentFrame = Instantiate(cursorFramePrefab);
+                }
+
+                Vector3 blockWorldPos = gridManager.GetBlock(gridPos).transform.position;
+                currentFrame.transform.position = blockWorldPos + Vector3.up * 0.05f;
+            }
+        }
+
+            if (Input.GetMouseButtonDown(0)) // 左クリックしたら
         {
             unit = TurnManager.Instance.CurrentUnit;
 
@@ -41,11 +71,14 @@ public class InputHandler : MonoBehaviour
 
             if (!TurnManager.Instance.IsCurrentUnit(unit)) return; // 自分のターンでなければ無視
 
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+            ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
+                
                 Vector3 clickPos = hit.point;
-                Vector2Int gridPos = gridManager.GetGridPosition(clickPos);
+                Vector3 adjustedHitPoint = hit.point + new Vector3(0.15f, 0, -0.15f);
+
+                Vector2Int gridPos = gridManager.GetGridPosition(adjustedHitPoint);
                 GridBlock clickedBlock = gridManager.GetBlock(gridPos);
 
                 if (clickedBlock != null)
@@ -64,6 +97,7 @@ public class InputHandler : MonoBehaviour
                     Debug.Log("クリックしたマス: " + gridPos);
                     // ここに移動とかハイライト処理とかを書く
                     bool canMove = movableBlocks.Exists(b => b.gridPos == clickedBlock.gridPos);
+                    
 
                     if (clickedBlock != null && clickedBlock.occupantUnit != null)
                     {
@@ -72,15 +106,23 @@ public class InputHandler : MonoBehaviour
                         Debug.Log("そのユニットのチーム: " + clickedBlock.occupantUnit.team);
                         Unit attacker = TurnManager.Instance.CurrentUnit;
                         Unit target = clickedBlock.occupantUnit;
-
-                        Vector2Int unitPos = gridManager.GetGridPosition(attacker.transform.position);
+                        Vector2Int unitPos = gridManager.GetGridPosition(unit.transform.position);
+                        List<Vector2Int> attackRange = unit.status.attackPattern.GetPattern(unitPos);
                         Vector2Int targetPos = clickedBlock.gridPos;
 
-                        if (gridManager.IsWithinAttackRange(unitPos, targetPos, attacker.status.attackRange))
+                        if (attackableBlocks.Any(b => b.gridPos == clickedBlock.gridPos))
                         {
-                            attacker.Attack(target);
-                            TurnManager.Instance.EndUnitTurn();
-                            return;
+                            if (attacker.team != target.team)
+                            {
+                                
+                                attacker.Attack(target);
+                                ClearHighlights();
+                                ClearAllHighlights();
+                                currentAttackableBlocks.Clear();
+                                //TurnManager.Instance.EndUnitTurn();
+                                return;
+                            }
+                            
                         }
                         else
                         {
@@ -92,13 +134,14 @@ public class InputHandler : MonoBehaviour
                     if (canMove)
                     {
                         
-
-                        unit.MoveTo(clickedBlock.transform.position);
-                        TurnManager.Instance.EndUnitTurn();
                         ClearHighlights();
+                        unit.MoveTo(clickedBlock.transform.position);
+                        ClearAllHighlights();
+                        //TurnManager.Instance.EndUnitTurn();
+                        
                     }
                     
-
+                    
 
                 }
                 /*
@@ -111,13 +154,53 @@ public class InputHandler : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.A))//攻撃
+        {
+            ClearHighlights();
+            ClearAllHighlights();
+            ShowAttackRange(unit);
+            return;
+        }
+        if (Input.GetKeyDown(KeyCode.M))//移動
+        {
+            ClearHighlights();
+            ClearAllHighlights();
+            if (TurnManager.Instance.CurrentUnit != null)
+            {
+                
+                ShowMoveRange(unit);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.C))//移動キャンセル
+        {
+            ClearHighlights();
+            ClearAllHighlights();
+            if (TurnManager.Instance.CurrentUnit != null)
+            {
+                TurnManager.Instance.CurrentUnit.CancelMove();
+                ShowMoveRange(unit);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.E))//ターン終了
+        {
+            ClearHighlights();
+            ClearAllHighlights();
+            if (TurnManager.Instance.CurrentUnit != null)
+            {
+
+                TurnManager.Instance.EndUnitTurn();
+            }
+        }
+
+
+
     }
 
     //移動範囲の表示
     public void ShowMoveRange(Unit unit)
     {
         ClearHighlights();
-
+        ClearAllHighlights();
         Vector2Int unitPos = gridManager.GetGridPosition(unit.transform.position);
         GridBlock currentBlock = gridManager.GetBlock(unitPos);
 
@@ -136,7 +219,7 @@ public class InputHandler : MonoBehaviour
             block.Highlight(true);
             currentHighlightedBlocks.Add(block);
             movableBlocks.Add(block);
-            ShowAttackRange(unit);
+            //ShowAttackRange(unit);
         }
 
         // 範囲内にあるけど移動できない（青くなってない）ブロックに対して
@@ -158,14 +241,26 @@ public class InputHandler : MonoBehaviour
     //攻撃範囲の表示
     private void ShowAttackRange(Unit unit)
     {
+        attackableBlocks.Clear();
         Vector2Int unitPos = gridManager.GetGridPosition(unit.transform.position);
         List<GridBlock> allAttackableBlocks = gridManager.GetBlocksInRange(unitPos, unit.status.attackRange);
-
-        foreach (var block in allAttackableBlocks)
+        List<Vector2Int> attackPositions = unit.status.attackPattern.GetPattern(unitPos);
+        var blocks = gridManager.GetAttackableBlockss(unitPos, unit.status.attackPattern);
+        attackableBlocks = gridManager.GetAttackableBlockss(unitPos, unit.status.attackPattern);
+        foreach (var block in blocks)
         {
-            if (block.occupantUnit != null && block.occupantUnit.team != unit.team)
+            block.SetColor(new Color(1, 0, 0, 0.5f)); // 赤色
+            attackableBlocks.Add(block);
+            currentAttackableBlocks.Add(block);
+        }
+
+        foreach (var pos in attackPositions)
+        {
+            GridBlock block = gridManager.GetBlock(pos);
+            if (block != null)
             {
-                block.SetColor(new Color(1f, 0f, 0f, 0.5f));
+                block.SetColor(new Color(1, 0, 0, 0.5f)); // 例：赤色
+                currentHighlightedBlocks.Add(block);     // 消すとき用に登録
             }
             else
             {
@@ -177,12 +272,13 @@ public class InputHandler : MonoBehaviour
     }
 
     //移動・攻撃範囲の表示を消す
-    private void ClearHighlights()
+    public void ClearHighlights()
     {
         foreach (var block in currentHighlightedBlocks)
         {
             block.Highlight(true);
         }
+        currentAttackableBlocks.Clear();
         currentHighlightedBlocks.Clear();
         movableBlocks.Clear();
     }
@@ -193,6 +289,7 @@ public class InputHandler : MonoBehaviour
         {
             block.ClearHighlights();
         }
+        currentAttackableBlocks.Clear();
     }
 
     private void ShowUnwalkableBlocks(List<GridBlock> unwalkable)
@@ -204,10 +301,7 @@ public class InputHandler : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        TurnManager.OnTurnStart += ShowMoveRange;
-    }
+    
 
     private void OnDisable()
     {
