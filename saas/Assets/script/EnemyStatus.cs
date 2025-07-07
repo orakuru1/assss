@@ -14,18 +14,20 @@ public class EnemyStatus : MonoBehaviour
 
     [Header("UI")]
     public Slider hpSlider;
+    public Text hptext;
     public GameObject statusImage;
 
     private Animator anim;
     private Coroutine hpAnimCoroutine;
     public AllStatus player;
+    //public EnemySpawer spawner; //スポナーからセットされる
 
     // Start is called before the first frame update
     void Start()
     {
         currentHP = maxHP;
         anim = GetComponent<Animator>();
-        UpdateHPBar();
+        UpdateHPBar(currentHP);
     }
 
     ///<summary>
@@ -56,7 +58,7 @@ public class EnemyStatus : MonoBehaviour
         }
     }
 
-    private IEnumerator AnimateHPBar()
+    private IEnumerator AnimateHPBar() //HPバーを滑らかに減らす
     {
         float duration = 0.5f;
         float startValue = hpSlider.value;
@@ -72,6 +74,7 @@ public class EnemyStatus : MonoBehaviour
         }
 
         hpSlider.value = endValue;
+        if(hptext != null) UpdateHPBar(currentHP);
     }
 
     void Die()
@@ -79,16 +82,31 @@ public class EnemyStatus : MonoBehaviour
         anim.SetTrigger("DieHit");
         Destroy(gameObject, 3.0f);
         Destroy(statusImage, 3.0f);
-        player.GainExp(5);
+        player.GainExp(10);
+
+       /* if(spawner != null)
+        {
+            spawner.SpawnNextEnemy();
+        }*/
     }
 
     // Update is called once per frame
-    private void UpdateHPBar()
+    private void UpdateHPBar(float currentHP)
     {
         if(hpSlider != null)
         {
             hpSlider.maxValue = 1f;
             hpSlider.value = currentHP / maxHP;
         }
+
+        if(hptext != null)
+        {
+            hptext.text = Mathf.CeilToInt(currentHP) + "/" + Mathf.CeilToInt(maxHP);
+        }
+    }
+
+    public bool IsAlive()
+    {
+        return currentHP > 0;
     }
 }

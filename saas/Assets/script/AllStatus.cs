@@ -14,14 +14,14 @@ public class AllStatus : MonoBehaviour
     public int expToNextLevel = 10; //次のレベルが上がるまでの数
 
     public Slider hpSlider;
+    public Text hptext;
     public Slider expSlider;
-
 
     // Start is called before the first frame update
     void Start()
     {
         currentHP = maxHP;
-        UpdateHPBar();
+        UpdateHPBar(currentHP);
     }
 
     //ダメージ処理
@@ -30,7 +30,7 @@ public class AllStatus : MonoBehaviour
         float actualDamage = Mathf.Max(0, damage - defense);
         currentHP -= actualDamage;
         currentHP = Mathf.Max(0, currentHP);
-        UpdateHPBar();
+        UpdateHPBar(currentHP);
     }
 
     public void GainExp(int amount)
@@ -57,15 +57,20 @@ public class AllStatus : MonoBehaviour
         expToNextLevel += 5; //次のレベルに必要な経験値を増やす
 
         Debug.Log("レベルアップ! 現在のレベル" + level);
-        UpdateHPBar();
+        UpdateHPBar(currentHP);
     }
 
     // Update is called once per frame
-    void UpdateHPBar()
+    void UpdateHPBar(float currentHP)
     {
         if(hpSlider != null)
         {
             hpSlider.value = currentHP / maxHP;
+        }
+
+        if(hptext != null)
+        {
+            hptext.text = Mathf.CeilToInt(currentHP) + "/" + Mathf.CeilToInt(maxHP);
         }
     }
 
