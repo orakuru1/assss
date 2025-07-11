@@ -20,6 +20,7 @@ public class EnemyStatus : MonoBehaviour
     private Animator anim;
     private Coroutine hpAnimCoroutine;
     public AllStatus player;
+    public BattleCamera battalecamera;
     //public EnemySpawer spawner; //スポナーからセットされる
 
     // Start is called before the first frame update
@@ -83,6 +84,7 @@ public class EnemyStatus : MonoBehaviour
         Destroy(gameObject, 3.0f);
         Destroy(statusImage, 3.0f);
         player.GainExp(10);
+        battalecamera.ExitBattleView();
 
        /* if(spawner != null)
         {

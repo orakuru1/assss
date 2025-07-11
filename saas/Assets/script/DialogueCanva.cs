@@ -13,6 +13,7 @@ public class DialogueCanva : MonoBehaviour
 
     private bool alreadyClicked = false;
     public static DialogueCanva currentOpenDialogue;
+    public BattleCamera battalecamera;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +53,8 @@ public class DialogueCanva : MonoBehaviour
         {
             attacker.SetTarget(myStatus);
         }
+
+        battalecamera.EnterBattleView();
 
     }
 
