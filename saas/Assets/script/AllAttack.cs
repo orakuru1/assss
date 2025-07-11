@@ -18,7 +18,7 @@ public class AllAttack : MonoBehaviour
     {
         anim = GetComponent<Animator>();
 
-        SelectNextTarget();
+        //SelectNextTarget();
     }
 
     // Update is called once per frame
@@ -39,7 +39,9 @@ public class AllAttack : MonoBehaviour
             
             if(!currentTarget.IsAlive())
             {
-                SelectNextTarget();
+                enemies.Remove(currentTarget);
+               
+                //SelectNextTarget();
             }
         }
     }
@@ -56,7 +58,9 @@ public class AllAttack : MonoBehaviour
             
             if(!currentTarget.IsAlive())
             {
-                SelectNextTarget();
+                enemies.Remove(currentTarget);
+               
+                //SelectNextTarget();
             }
         }
     }
@@ -73,7 +77,13 @@ public class AllAttack : MonoBehaviour
         }
     }
 
-    void SelectNextTarget()
+    public void SetTarget(EnemyStatus target)
+    {
+        currentTarget = target;
+        Debug.Log("ターゲット変更");
+    }
+
+    /*void SelectNextTarget()
     {
         currentTarget = enemies.Find(e => e != null && e.IsAlive());
 
@@ -82,5 +92,5 @@ public class AllAttack : MonoBehaviour
             Debug.Log("すべての敵を倒しました");
             canva.enabled = false; //もう攻撃できない
         }
-    }
+    }*/
 }

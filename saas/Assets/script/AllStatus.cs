@@ -10,6 +10,7 @@ public class AllStatus : MonoBehaviour
     public float currentHP;
     public float attack = 2f; //攻撃力
     public float defense = 1f; //防御力
+    public float speed = 2f;  //素早さ
     public int currentExp = 0; //初期経験値
     public int expToNextLevel = 10; //次のレベルが上がるまでの数
 
@@ -53,6 +54,7 @@ public class AllStatus : MonoBehaviour
         maxHP += 2f;
         attack += 1f;
         defense += 0.5f;
+        speed += 1f;
         currentHP = maxHP; //レベルアップ時に全回復
         expToNextLevel += 5; //次のレベルに必要な経験値を増やす
 
