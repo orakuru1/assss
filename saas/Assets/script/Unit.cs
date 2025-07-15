@@ -122,7 +122,7 @@ public class Unit : MonoBehaviour
         GridBlock currentBlock = gridManager.GetBlock(currentGridPos);
         if (currentBlock != null && currentBlock.occupantUnit == this)
         {
-            currentBlock.occupantUnit = null;
+            currentBlock.UpdateOccupant(null);
         }
 
         transform.position = targetPosition;
@@ -131,7 +131,7 @@ public class Unit : MonoBehaviour
         GridBlock newBlock = gridManager.GetBlock(newGridPos);
         if (newBlock != null)
         {
-            newBlock.occupantUnit = this;
+            newBlock.UpdateOccupant(this);
         }
     }
 
@@ -204,6 +204,12 @@ public class Unit : MonoBehaviour
         }
     }
 
+    public void Heal(int amount)
+    {
+        status.currentHP = Mathf.Clamp(status.currentHP + amount, 0, status.maxHP);
+        Debug.Log($"{status.unitName} は {amount} 回復した！（現在HP: {status.currentHP}）");
+    }
+
     public void LevelUp()
     {
         status.level++;
@@ -226,7 +232,8 @@ public class Unit : MonoBehaviour
         }
 
         Debug.Log($"{status.unitName} は撃破されました！");
-        gameObject.SetActive(false);
+        TurnManager.Instance.RemoveUnit(this);
+        Destroy(gameObject);
     }
 
     public void CancelMove()

@@ -27,13 +27,29 @@ public class TurnManager : MonoBehaviour
         StartNextTurn();
     }
 
+    private List<Unit> allUnits = new List<Unit>(); // 追加
+
     public void InitializeTurnOrder()
     {
-        Unit[] allUnits = FindObjectsOfType<Unit>();
+        allUnits = FindObjectsOfType<Unit>().ToList();
         var sortedUnits = allUnits.OrderByDescending(u => u.status.speed).ToList();
-
         turnQueue = new Queue<Unit>(sortedUnits);
     }
+
+    public void RemoveUnit(Unit unit)
+    {
+        allUnits.Remove(unit);
+
+        // キューの再構築（削除対象を含まないように）
+        turnQueue = new Queue<Unit>(turnQueue.Where(u => u != unit));
+
+        // 現在のユニットだったら即終了して次へ
+        if (CurrentUnit == unit)
+        {
+            StartNextTurn();
+        }
+    }
+
 
     public void StartNextTurn()
     {
@@ -44,8 +60,13 @@ public class TurnManager : MonoBehaviour
         {
             InitializeTurnOrder();
         }
-        
         CurrentUnit = turnQueue.Dequeue();
+        Vector2Int pos = CurrentUnit.gridManager.GetGridPosition(CurrentUnit.transform.position);
+        GridBlock block = CurrentUnit.gridManager.GetBlock(pos);
+        if (block != null)
+        {
+            block.UpdateOccupant(CurrentUnit);
+        }
         OnTurnStart?.Invoke(CurrentUnit);;
         InputHandler.Instance.unit = CurrentUnit;
         Debug.Log($"現在の行動ユニット: {CurrentUnit.name}（{CurrentUnit.team}）");
@@ -56,7 +77,7 @@ public class TurnManager : MonoBehaviour
             GridManager gridManager = FindObjectOfType<GridManager>();
             //enemyAI.HighlightEnemyMoveRange(CurrentUnit, gridManager);
             
-            //StartCoroutine(enemyAI.ExecuteEnemyMove(CurrentUnit, FindObjectOfType<GridManager>()));
+            StartCoroutine(enemyAI.ExecuteEnemyTurn(CurrentUnit, FindObjectOfType<GridManager>()));
         }
         else
         {
@@ -95,5 +116,7 @@ public class TurnManager : MonoBehaviour
         // 敵の移動処理開始
         //StartCoroutine(enemyAI.ExecuteEnemyMove(CurrentUnit, gridManager));
     }
+
+
 
 }

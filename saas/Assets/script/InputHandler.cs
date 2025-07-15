@@ -181,6 +181,12 @@ public class InputHandler : MonoBehaviour
                 ShowMoveRange(unit);
             }
         }
+        if (Input.GetKeyDown(KeyCode.B))//1つ前の操作に戻る
+        {
+            ClearHighlights();
+            ClearAllHighlights();
+            
+        }
         if (Input.GetKeyDown(KeyCode.E))//ターン終了
         {
             ClearHighlights();
@@ -239,7 +245,7 @@ public class InputHandler : MonoBehaviour
 
 
     //攻撃範囲の表示
-    private void ShowAttackRange(Unit unit)
+    public void ShowAttackRange(Unit unit)
     {
         attackableBlocks.Clear();
         Vector2Int unitPos = gridManager.GetGridPosition(unit.transform.position);
@@ -279,6 +285,7 @@ public class InputHandler : MonoBehaviour
             block.Highlight(true);
         }
         currentAttackableBlocks.Clear();
+        attackableBlocks.Clear();
         currentHighlightedBlocks.Clear();
         movableBlocks.Clear();
     }
@@ -290,6 +297,7 @@ public class InputHandler : MonoBehaviour
             block.ClearHighlights();
         }
         currentAttackableBlocks.Clear();
+        attackableBlocks.Clear();
     }
 
     private void ShowUnwalkableBlocks(List<GridBlock> unwalkable)

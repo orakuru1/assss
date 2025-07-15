@@ -1248,6 +1248,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &37209643
 BoxCollider:
@@ -1732,6 +1733,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &53928626
 BoxCollider:
@@ -3119,6 +3121,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &124332284
 BoxCollider:
@@ -3589,6 +3592,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &144857458
 BoxCollider:
@@ -3717,6 +3721,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &157265932
 GameObject:
@@ -3940,7 +3945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputHandler: {fileID: 1544700882}
-  enemyAI: {fileID: 0}
+  enemyAI: {fileID: 1178400902}
   gridManager: {fileID: 527708828}
 --- !u!4 &162430121
 Transform:
@@ -4071,6 +4076,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &173866586
 PrefabInstance:
@@ -4507,6 +4513,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &179066484
 BoxCollider:
@@ -4717,6 +4724,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &188702068
 PrefabInstance:
@@ -5050,6 +5058,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &201583676
 PrefabInstance:
@@ -5162,6 +5171,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &205421221
 PrefabInstance:
@@ -5896,6 +5906,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &228260968
 PrefabInstance:
@@ -6993,6 +7004,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &270908786
 GameObject:
@@ -7262,6 +7274,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &278681074
 BoxCollider:
@@ -7390,6 +7403,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &281840656
 BoxCollider:
@@ -8253,6 +8267,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &319533678
 PrefabInstance:
@@ -8689,6 +8704,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &329815946
 BoxCollider:
@@ -9463,6 +9479,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &364721163
 GameObject:
@@ -9693,6 +9710,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &366130887
 PrefabInstance:
@@ -10149,6 +10167,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &380831758
 GameObject:
@@ -10264,6 +10283,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &381436343
 BoxCollider:
@@ -10307,6 +10327,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &389795453
 BoxCollider:
@@ -11514,6 +11535,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &467254604
 GameObject:
@@ -11629,6 +11651,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &469568521
 PrefabInstance:
@@ -12165,6 +12188,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &486738476
 BoxCollider:
@@ -12496,6 +12520,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &494209545
 PrefabInstance:
@@ -13016,6 +13041,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &513312917
 PrefabInstance:
@@ -13292,6 +13318,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &518826345
 BoxCollider:
@@ -13411,6 +13438,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &529426322
 BoxCollider:
@@ -13863,6 +13891,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &570477424
 PrefabInstance:
@@ -13962,6 +13991,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &574902026
 PrefabInstance:
@@ -14285,6 +14315,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &585558926
 PrefabInstance:
@@ -15056,6 +15087,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &619617547
 PrefabInstance:
@@ -17744,6 +17776,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &742891510
 BoxCollider:
@@ -17872,6 +17905,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &752595733
 GameObject:
@@ -18743,6 +18777,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &781390196
 PrefabInstance:
@@ -19016,6 +19051,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &790416568
 PrefabInstance:
@@ -19723,6 +19759,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &825595592
 BoxCollider:
@@ -20410,6 +20447,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &864392428
 BoxCollider:
@@ -21272,6 +21310,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &912387946
 GameObject:
@@ -21387,6 +21426,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &914081546
 GameObject:
@@ -21694,6 +21734,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &926170002
 GameObject:
@@ -21809,6 +21850,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &937603302
 GameObject:
@@ -21924,6 +21966,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &941853174
 PrefabInstance:
@@ -22787,6 +22830,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &969275733
 PrefabInstance:
@@ -23263,6 +23307,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &999577916
 PrefabInstance:
@@ -23557,6 +23602,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1003115141
 PrefabInstance:
@@ -25570,6 +25616,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1089005048
 BoxCollider:
@@ -26094,6 +26141,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1122625979
 GameObject:
@@ -26441,6 +26489,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1143029402
 MonoBehaviour:
@@ -26458,6 +26507,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1144068348
 BoxCollider:
@@ -27016,6 +27066,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1160719142
 BoxCollider:
@@ -27256,7 +27307,7 @@ MonoBehaviour:
     - 1.1
     - 1.2
     - 1.3
-    attackPattern: {fileID: 11400000, guid: f232257609758174c91f9e3ce9ed5404, type: 2}
+    attackPattern: {fileID: 11400000, guid: ddc58f4ff86108740aa6e49fecbf143c, type: 2}
   team: 1
   moveSpeed: 2
   movableBlocks: []
@@ -27266,6 +27317,18 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 10184396}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1178400902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178400890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac4c3a99a2f750409d5a6434af1b3e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1179368540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27282,6 +27345,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1180149603
 GameObject:
@@ -27767,6 +27831,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1188746917
 PrefabInstance:
@@ -28494,6 +28559,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1221570547
 MonoBehaviour:
@@ -28511,6 +28577,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1226001454
 MonoBehaviour:
@@ -28528,6 +28595,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1230430801
 BoxCollider:
@@ -29195,6 +29263,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1262087675
 MonoBehaviour:
@@ -29212,6 +29281,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1263885062
 PrefabInstance:
@@ -30056,6 +30126,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1300970662
 BoxCollider:
@@ -30386,6 +30457,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1308955627
 PrefabInstance:
@@ -30691,6 +30763,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1319727626
 PrefabInstance:
@@ -31016,6 +31089,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1336633526
 BoxCollider:
@@ -31226,6 +31300,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1341542772
 GameObject:
@@ -31355,6 +31430,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1342994434
 GameObject:
@@ -31657,6 +31733,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!4 &1358404086 stripped
 Transform:
@@ -31873,6 +31950,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1366966816
 BoxCollider:
@@ -34541,6 +34619,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1385093932
 BoxCollider:
@@ -34584,6 +34663,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1387147226
 GameObject:
@@ -34698,6 +34778,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1389212286
 BoxCollider:
@@ -34823,6 +34904,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1396204204
 GameObject:
@@ -35109,6 +35191,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1399778669
 PrefabInstance:
@@ -35319,6 +35402,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1413667354
 PrefabInstance:
@@ -35647,6 +35731,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1416522946
 GameObject:
@@ -35762,6 +35847,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1417739346
 GameObject:
@@ -35877,6 +35963,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1418481699
 PrefabInstance:
@@ -36166,6 +36253,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1425469065
 PrefabInstance:
@@ -36711,6 +36799,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1441030587
 GameObject:
@@ -36826,6 +36915,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1441425527
 MonoBehaviour:
@@ -36843,6 +36933,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1443033753
 MonoBehaviour:
@@ -36860,6 +36951,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1443610138
 PrefabInstance:
@@ -36965,6 +37057,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1445439289
 BoxCollider:
@@ -37008,6 +37101,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1448569649
 MonoBehaviour:
@@ -37025,6 +37119,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1448623450
 BoxCollider:
@@ -37484,6 +37579,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1475989179
 GameObject:
@@ -37599,6 +37695,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1477210972
 GameObject:
@@ -37714,6 +37811,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1478473353
 BoxCollider:
@@ -37744,6 +37842,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1480058747
 BoxCollider:
@@ -38444,6 +38543,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1498029257
 PrefabInstance:
@@ -38569,6 +38669,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1501701413
 PrefabInstance:
@@ -39027,6 +39128,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1508556661
 PrefabInstance:
@@ -39126,6 +39228,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1508896013
 BoxCollider:
@@ -39156,6 +39259,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1513666035
 BoxCollider:
@@ -39322,6 +39426,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1526246639
 BoxCollider:
@@ -39699,6 +39804,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1535243022
 MonoBehaviour:
@@ -39716,6 +39822,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!4 &1535248247 stripped
 Transform:
@@ -40013,6 +40120,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1543900108
 BoxCollider:
@@ -40203,6 +40311,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1547949442
 GameObject:
@@ -40330,6 +40439,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1555012873
 GameObject:
@@ -40445,6 +40555,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1558054954
 BoxCollider:
@@ -40655,6 +40766,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1561400715
 BoxCollider:
@@ -40698,6 +40810,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1568329753
 PrefabInstance:
@@ -40816,6 +40929,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1571610671
 PrefabInstance:
@@ -40997,6 +41111,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1575022154
 PrefabInstance:
@@ -41526,6 +41641,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1588143636
 PrefabInstance:
@@ -41723,6 +41839,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1597898846
 PrefabInstance:
@@ -42087,6 +42204,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1605581363
 BoxCollider:
@@ -42461,6 +42579,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1632926073
 PrefabInstance:
@@ -42560,6 +42679,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1635784566
 GameObject:
@@ -42627,6 +42747,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1645050957
 BoxCollider:
@@ -42752,6 +42873,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1656973306
 BoxCollider:
@@ -42795,6 +42917,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1658749993
 BoxCollider:
@@ -42825,6 +42948,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1659423978
 GameObject:
@@ -43201,6 +43325,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1664537112
 BoxCollider:
@@ -43492,6 +43617,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1669658118
 GameObject:
@@ -43642,6 +43768,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1675191483
 GameObject:
@@ -43757,6 +43884,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1675379062
 PrefabInstance:
@@ -44314,6 +44442,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1691640773
 MonoBehaviour:
@@ -44331,6 +44460,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1693017292
 MonoBehaviour:
@@ -44348,6 +44478,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1702140548
 PrefabInstance:
@@ -44686,6 +44817,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1705572850
 PrefabInstance:
@@ -45152,6 +45284,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 1
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1719392489
 GameObject:
@@ -45267,6 +45400,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1719551609
 PrefabInstance:
@@ -45366,6 +45500,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1721077226
 BoxCollider:
@@ -45494,6 +45629,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1723977129
 GameObject:
@@ -45609,6 +45745,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1728709910
 BoxCollider:
@@ -45737,6 +45874,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1730076796
 PrefabInstance:
@@ -46113,6 +46251,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1737240386
 BoxCollider:
@@ -46169,6 +46308,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1740964460
 BoxCollider:
@@ -46199,6 +46339,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1744904309
 MonoBehaviour:
@@ -46216,6 +46357,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1746561124
 PrefabInstance:
@@ -46520,6 +46662,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1763076862
 BoxCollider:
@@ -46751,6 +46894,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1768155113
 MonoBehaviour:
@@ -46768,6 +46912,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1773893302
 PrefabInstance:
@@ -46959,6 +47104,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1774395856
 BoxCollider:
@@ -47015,6 +47161,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1792303796
 MonoBehaviour:
@@ -47032,6 +47179,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1793584905
 PrefabInstance:
@@ -47229,6 +47377,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1795565041
 BoxCollider:
@@ -47528,6 +47677,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1826371153
 BoxCollider:
@@ -47558,6 +47708,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1826705607
 MonoBehaviour:
@@ -47575,6 +47726,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1826781771
 MonoBehaviour:
@@ -47592,6 +47744,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1827778195
 BoxCollider:
@@ -47726,6 +47879,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1841164407
 BoxCollider:
@@ -47756,6 +47910,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1849317883
 PrefabInstance:
@@ -47894,6 +48049,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1857177099
 BoxCollider:
@@ -47924,6 +48080,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!4 &1858089841 stripped
 Transform:
@@ -48153,6 +48310,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1875875430
 BoxCollider:
@@ -48378,6 +48536,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1885464622
 PrefabInstance:
@@ -48490,6 +48649,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1888672506
 PrefabInstance:
@@ -48774,6 +48934,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1893160975
 PrefabInstance:
@@ -49036,6 +49197,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1900091101
 BoxCollider:
@@ -49164,6 +49326,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1901458501
 BoxCollider:
@@ -49207,6 +49370,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1911838980
 PrefabInstance:
@@ -49324,6 +49488,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1914053219
 PrefabInstance:
@@ -49681,6 +49846,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1938279483
 BoxCollider:
@@ -49711,6 +49877,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1939092059
 BoxCollider:
@@ -49741,6 +49908,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1939620838
 BoxCollider:
@@ -49966,6 +50134,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1947277196
 PrefabInstance:
@@ -50365,6 +50534,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1964877196
 BoxCollider:
@@ -50395,6 +50565,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1965247057
 BoxCollider:
@@ -50657,6 +50828,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1977022990
 BoxCollider:
@@ -50687,6 +50859,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &1977042803
 PrefabInstance:
@@ -50884,6 +51057,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &1978966792
 GameObject:
@@ -51044,6 +51218,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1983960732
 BoxCollider:
@@ -51087,6 +51262,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1988444792
 BoxCollider:
@@ -51307,6 +51483,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &2000015435
 PrefabInstance:
@@ -51504,6 +51681,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &2003101964
 BoxCollider:
@@ -51634,6 +51812,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &2014222870
 MonoBehaviour:
@@ -51651,6 +51830,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &2016967424
 PrefabInstance:
@@ -51763,6 +51943,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &2029808365
 BoxCollider:
@@ -52361,6 +52542,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &2063506632
 MonoBehaviour:
@@ -52378,6 +52560,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &2066886447
 GameObject:
@@ -52822,6 +53005,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &2079062535
 PrefabInstance:
@@ -53004,6 +53188,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &2084823573
 PrefabInstance:
@@ -53511,6 +53696,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &2093824235
 PrefabInstance:
@@ -53606,6 +53792,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &2106606336
 PrefabInstance:
@@ -54049,6 +54236,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &2122801726
 PrefabInstance:
@@ -54433,6 +54621,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1001 &2129935099
 PrefabInstance:
@@ -54558,6 +54747,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!1 &2131779967
 GameObject:
@@ -55029,6 +55219,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &2138725549
 BoxCollider:
@@ -55302,4 +55493,5 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0

@@ -14,6 +14,37 @@ public class GridBlock : MonoBehaviour
     private Color highlightColor;//移動可能なマスの色
     private Color blockedColor;//移動不可なマスの色
     private Color originalColor;//元のマスの色
+
+    public TileEffectData tileEffect;
+    private TileEffectData previousEffect;
+
+    public void UpdateOccupant(Unit newUnit)
+    {
+        if (occupantUnit != null && previousEffect != null)
+        {
+            previousEffect.RemoveEffect(occupantUnit);
+        }
+
+        occupantUnit = newUnit;
+
+        if (occupantUnit != null && tileEffect != null)
+        {
+            tileEffect.ApplyEffect(occupantUnit);
+            previousEffect = tileEffect;
+        }
+        else
+        {
+            previousEffect = null;
+        }
+    }
+
+    private void Update()
+    {
+        if (occupantUnit != null && tileEffect != null && tileEffect.applyEachTurn)
+        {
+            tileEffect.ApplyEffect(occupantUnit);
+        }
+    }
     public enum BlockKinds//ブロックの種類
     {
         sand,
