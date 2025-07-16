@@ -1123,7 +1123,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -1905,7 +1905,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 117
+      value: 116
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -2165,6 +2165,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &45753685
 BoxCollider:
@@ -2258,7 +2259,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 69
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -2508,7 +2509,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 149
+      value: 148
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -2595,6 +2596,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &52911467
 BoxCollider:
@@ -3324,6 +3326,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &62547715
 BoxCollider:
@@ -3669,7 +3672,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 140
+      value: 139
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -3876,6 +3879,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &74862441
 BoxCollider:
@@ -4081,6 +4085,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &81138665
 BoxCollider:
@@ -4847,6 +4852,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &90361907
 BoxCollider:
@@ -5210,6 +5216,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &93297050
 BoxCollider:
@@ -5278,7 +5285,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 142
+      value: 141
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -5498,6 +5505,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &99640802
 BoxCollider:
@@ -5818,96 +5826,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06db9a7ddd8a5704684a6469cf4d5140, type: 3}
---- !u!1001 &109562670
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1087780473}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.6199951
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 24.229996
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_Name
-      value: "\uFF11\u30DE\u30B9\u708E (1)"
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 826aac0ca430b09419564f4688537dfb, type: 3}
---- !u!4 &109562671 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-    type: 3}
-  m_PrefabInstance: {fileID: 109562670}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &110064673 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6343069971856752486, guid: 0095561805780f9469a34edb1ee60f04,
@@ -6343,6 +6261,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &116345830
 BoxCollider:
@@ -6593,6 +6512,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &121168486
 BoxCollider:
@@ -6654,6 +6574,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &121438532
 BoxCollider:
@@ -6690,6 +6611,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &123405936
 BoxCollider:
@@ -7513,6 +7435,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &138714299
 BoxCollider:
@@ -7759,6 +7682,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &140856359
 BoxCollider:
@@ -7918,6 +7842,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &147964408
 BoxCollider:
@@ -9742,7 +9667,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 122
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -10012,7 +9937,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 85
+      value: 84
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -10213,6 +10138,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &185048464
 BoxCollider:
@@ -10733,6 +10659,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &197777211
 MonoBehaviour:
@@ -10750,6 +10677,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &197777212
 BoxCollider:
@@ -11008,7 +10936,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 153
+      value: 152
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -11266,7 +11194,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 155
+      value: 154
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -11401,6 +11329,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &212703307
 BoxCollider:
@@ -11516,6 +11445,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &213381550
 BoxCollider:
@@ -12093,7 +12023,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 145
+      value: 144
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -12435,6 +12365,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &230505570
 BoxCollider:
@@ -13452,7 +13383,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 133
+      value: 132
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -14337,7 +14268,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 99
+      value: 98
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -14647,7 +14578,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 84
+      value: 83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -15309,6 +15240,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &277213137
 BoxCollider:
@@ -15853,96 +15785,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000087, y: 0.8000005, z: 1.0000061}
   m_Center: {x: 0.0000017285347, y: -0.4000006, z: 0.00000166893}
---- !u!1001 &289732004
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1087780473}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.6199951
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -25.350006
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 826aac0ca430b09419564f4688537dfb,
-        type: 3}
-      propertyPath: m_Name
-      value: "\uFF11\u30DE\u30B9\u708E (3)"
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 826aac0ca430b09419564f4688537dfb, type: 3}
---- !u!4 &289732005 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
-    type: 3}
-  m_PrefabInstance: {fileID: 289732004}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &289916317 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 103834, guid: 06db9a7ddd8a5704684a6469cf4d5140,
@@ -16021,6 +15863,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &291903653
 BoxCollider:
@@ -16154,6 +15997,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &294442604
 BoxCollider:
@@ -16270,6 +16114,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &296100704
 BoxCollider:
@@ -16451,6 +16296,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &303442407
 BoxCollider:
@@ -16609,6 +16455,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &306846013
 BoxCollider:
@@ -17483,7 +17330,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 151
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -17709,6 +17556,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &328597314
 BoxCollider:
@@ -17878,7 +17726,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 104
+      value: 103
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -18003,7 +17851,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cf787895767ccff4c86f37e9e351f1f8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 181
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf787895767ccff4c86f37e9e351f1f8,
         type: 3}
@@ -18103,7 +17951,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 62
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -18354,6 +18202,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &340649543
 BoxCollider:
@@ -18755,6 +18604,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &346244011
 BoxCollider:
@@ -19216,7 +19066,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 159
+      value: 158
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -19670,7 +19520,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 156
+      value: 155
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -19871,6 +19721,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &366384570
 BoxCollider:
@@ -20146,7 +19997,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 121
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -20492,7 +20343,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 51
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -21057,6 +20908,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &386932767
 BoxCollider:
@@ -21112,6 +20964,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &387708657
 BoxCollider:
@@ -21447,7 +21300,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -22013,6 +21866,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &400416354
 BoxCollider:
@@ -23176,6 +23030,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &427688421
 BoxCollider:
@@ -23596,6 +23451,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &438018235
 BoxCollider:
@@ -23994,6 +23850,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &439553649
 BoxCollider:
@@ -24202,6 +24059,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 1
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &441885583
 BoxCollider:
@@ -24226,7 +24084,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 107
+      value: 106
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -24449,6 +24307,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &445667939
 BoxCollider:
@@ -24560,6 +24419,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &447299489
 BoxCollider:
@@ -24890,6 +24750,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &456085631
 BoxCollider:
@@ -25121,6 +24982,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &457556152
 BoxCollider:
@@ -25538,6 +25400,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &463914308
 BoxCollider:
@@ -25624,6 +25487,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &464098036
 BoxCollider:
@@ -25730,7 +25594,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 92
+      value: 91
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -25849,7 +25713,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 100
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -26075,7 +25939,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 112
+      value: 111
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -26248,6 +26112,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &473666549
 BoxCollider:
@@ -27072,6 +26937,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &492204894
 BoxCollider:
@@ -27523,6 +27389,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &498235776
 BoxCollider:
@@ -28044,7 +27911,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 161
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -28557,6 +28424,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &517204435
 BoxCollider:
@@ -28998,6 +28866,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &526773024
 BoxCollider:
@@ -29022,7 +28891,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 171
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -29980,6 +29849,7 @@ MonoBehaviour:
     - 1.1
     - 1.2
     - 1.3
+    attackPattern: {fileID: 0}
   team: 1
   moveSpeed: 2
   movableBlocks: []
@@ -30369,6 +30239,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &559920286
 BoxCollider:
@@ -30447,6 +30318,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &560075254
 BoxCollider:
@@ -30659,6 +30531,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &561576298
 BoxCollider:
@@ -31049,6 +30922,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &572881593
 BoxCollider:
@@ -31187,7 +31061,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 82
+      value: 81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -31956,7 +31830,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 164
+      value: 163
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -32557,7 +32431,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 129
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -32884,6 +32758,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &595399074
 BoxCollider:
@@ -33253,6 +33128,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &602774208
 BoxCollider:
@@ -33384,7 +33260,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 61
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -33459,7 +33335,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 74
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -34193,6 +34069,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &617718204
 BoxCollider:
@@ -34399,7 +34276,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 91
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -35493,7 +35370,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -35568,7 +35445,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 52
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -35684,6 +35561,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &636539397
 BoxCollider:
@@ -36073,6 +35951,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &641954249
 BoxCollider:
@@ -36154,7 +36033,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 139
+      value: 138
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -36519,6 +36398,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &647996622
 BoxCollider:
@@ -36870,6 +36750,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &652243158
 BoxCollider:
@@ -37249,7 +37130,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 136
+      value: 135
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -37479,6 +37360,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &665182368
 BoxCollider:
@@ -37770,7 +37652,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cf787895767ccff4c86f37e9e351f1f8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 182
+      value: 181
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf787895767ccff4c86f37e9e351f1f8,
         type: 3}
@@ -38182,6 +38064,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &679088721
 BoxCollider:
@@ -39363,7 +39246,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 64
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -39463,7 +39346,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 174
+      value: 173
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -39758,6 +39641,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &708666335
 BoxCollider:
@@ -40014,6 +39898,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &711669077
 BoxCollider:
@@ -41077,7 +40962,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 70
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -41312,7 +41197,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 83
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -41481,7 +41366,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 172
+      value: 171
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -41777,7 +41662,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 110
+      value: 109
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -43070,7 +42955,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 101
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -43684,7 +43569,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 53
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -43944,6 +43829,81 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000087, y: 0.8000005, z: 1.0000061}
   m_Center: {x: 0.0000017285347, y: -0.4000006, z: 0.00000166893}
+--- !u!1001 &785290064
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1087780473}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 183
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_Name
+      value: "\u6B66\u5668\u5EAB2 (1)"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4864a811a11f744468b6ce7f68b18548, type: 3}
+--- !u!4 &785290065 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+    type: 3}
+  m_PrefabInstance: {fileID: 785290064}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &785461753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44049,7 +44009,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 144
+      value: 143
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -45116,6 +45076,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &806980171
 BoxCollider:
@@ -45552,6 +45513,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812356951}
   m_Mesh: {fileID: 4300376, guid: 353b40c6a1ff7dd469b9d1e4dc0f13a8, type: 3}
+--- !u!1001 &813350474
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1087780473}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 183
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -24
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4864a811a11f744468b6ce7f68b18548,
+        type: 3}
+      propertyPath: m_Name
+      value: "\u6B66\u5668\u5EAB2"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4864a811a11f744468b6ce7f68b18548, type: 3}
+--- !u!4 &813350475 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4864a811a11f744468b6ce7f68b18548,
+    type: 3}
+  m_PrefabInstance: {fileID: 813350474}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &813855632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45857,7 +45893,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 158
+      value: 157
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -45932,7 +45968,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -46261,6 +46297,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &820226202
 BoxCollider:
@@ -46965,7 +47002,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 66
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -47348,7 +47385,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 57
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -48639,6 +48676,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &864370178
 BoxCollider:
@@ -49029,7 +49067,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 68
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -49240,6 +49278,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &872542535
 BoxCollider:
@@ -49383,7 +49422,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 59
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -49524,6 +49563,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &881019104
 BoxCollider:
@@ -50197,6 +50237,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &899297145
 BoxCollider:
@@ -51604,7 +51645,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 56
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
         type: 3}
@@ -51736,6 +51777,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &920337601
 BoxCollider:
@@ -51965,6 +52007,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &923496388
 BoxCollider:
@@ -52289,6 +52332,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &927046574
 BoxCollider:
@@ -52541,6 +52585,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &932480573
 BoxCollider:
@@ -52687,7 +52732,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -52781,7 +52826,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 94
+      value: 93
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -52957,7 +53002,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -53032,7 +53077,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 48
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -53164,7 +53209,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 169
+      value: 168
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -53698,6 +53743,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &949427494
 BoxCollider:
@@ -54199,6 +54245,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &957015159
 BoxCollider:
@@ -54806,7 +54853,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 166
+      value: 165
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -55378,7 +55425,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 173
+      value: 172
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -55698,6 +55745,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &979105946
 BoxCollider:
@@ -55886,7 +55934,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 163
+      value: 162
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -56059,6 +56107,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &987777184
 BoxCollider:
@@ -56215,7 +56264,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 118
+      value: 117
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -56939,6 +56988,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &996557348
 BoxCollider:
@@ -57032,7 +57082,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 46
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -57675,7 +57725,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fdf47710c9fa85845b6b2cc6672431c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 178
+      value: 177
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdf47710c9fa85845b6b2cc6672431c2,
         type: 3}
@@ -57775,7 +57825,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 50
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -59042,7 +59092,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 125
+      value: 124
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -59284,6 +59334,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1034673296
 BoxCollider:
@@ -59622,6 +59673,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1038688341
 BoxCollider:
@@ -60129,7 +60181,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 138
+      value: 137
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -60245,6 +60297,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1044972229
 BoxCollider:
@@ -60557,6 +60610,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1049640643
 BoxCollider:
@@ -60871,7 +60925,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 58
+      value: 57
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -61422,6 +61476,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1059130977
 BoxCollider:
@@ -61738,6 +61793,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1061954072
 BoxCollider:
@@ -62139,6 +62195,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1068173826
 BoxCollider:
@@ -62429,6 +62486,7 @@ MonoBehaviour:
     - 1.1
     - 1.2
     - 1.3
+    attackPattern: {fileID: 0}
   team: 1
   moveSpeed: 2
   movableBlocks: []
@@ -62749,7 +62807,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 147
+      value: 146
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -63318,8 +63376,6 @@ Transform:
   - {fileID: 482057713}
   - {fileID: 618523903}
   - {fileID: 927791745}
-  - {fileID: 109562671}
-  - {fileID: 289732005}
   - {fileID: 933627572}
   - {fileID: 817006834}
   - {fileID: 25580790}
@@ -63470,6 +63526,8 @@ Transform:
   - {fileID: 670296105}
   - {fileID: 1681053971}
   - {fileID: 154042885}
+  - {fileID: 813350475}
+  - {fileID: 785290065}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -63850,6 +63908,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!114 &1100165473
 MonoBehaviour:
@@ -63867,6 +63926,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1100165474
 BoxCollider:
@@ -64023,6 +64083,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1101883530
 BoxCollider:
@@ -64494,6 +64555,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1111196713
 BoxCollider:
@@ -64858,7 +64920,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 89
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -64990,7 +65052,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 67
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -65677,6 +65739,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1126051982
 BoxCollider:
@@ -65902,6 +65965,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1130889247
 BoxCollider:
@@ -66668,6 +66732,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1145361125
 BoxCollider:
@@ -67128,7 +67193,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -67473,6 +67538,7 @@ MonoBehaviour:
     - 1.1
     - 1.2
     - 1.3
+    attackPattern: {fileID: 0}
   team: 0
   moveSpeed: 2
   movableBlocks: []
@@ -67508,7 +67574,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 86
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -67983,7 +68049,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 162
+      value: 161
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -68083,7 +68149,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 154
+      value: 153
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -68375,7 +68441,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 75
+      value: 74
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -68977,6 +69043,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1180850484
 BoxCollider:
@@ -69013,6 +69080,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1181081782
 BoxCollider:
@@ -69091,6 +69159,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1181736849
 BoxCollider:
@@ -69891,6 +69960,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1202767650
 BoxCollider:
@@ -69915,7 +69985,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 60
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -70193,6 +70263,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1207922072
 BoxCollider:
@@ -70217,7 +70288,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 102
+      value: 101
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -70349,7 +70420,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 152
+      value: 151
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -70424,7 +70495,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 116
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -70599,7 +70670,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 146
+      value: 145
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -70674,7 +70745,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 135
+      value: 134
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -70937,7 +71008,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 103
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -71121,6 +71192,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1221086337
 BoxCollider:
@@ -71496,6 +71568,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1230080504
 BoxCollider:
@@ -71696,6 +71769,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1232763382
 BoxCollider:
@@ -71846,6 +71920,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1237925471
 BoxCollider:
@@ -71993,6 +72068,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1239353918
 BoxCollider:
@@ -72401,6 +72477,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1248102691
 BoxCollider:
@@ -73029,7 +73106,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 71
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -73186,7 +73263,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 141
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -73273,6 +73350,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1259844696
 BoxCollider:
@@ -73832,6 +73910,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1274237453
 BoxCollider:
@@ -73937,6 +74016,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1276126781
 BoxCollider:
@@ -73973,6 +74053,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1280044463
 BoxCollider:
@@ -74570,6 +74651,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1298120161
 BoxCollider:
@@ -74927,6 +75009,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1300888398
 BoxCollider:
@@ -75262,6 +75345,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1305280930
 BoxCollider:
@@ -75368,7 +75452,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 115
+      value: 114
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -75461,6 +75545,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1309430717
 BoxCollider:
@@ -77017,6 +77102,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1333333682
 BoxCollider:
@@ -77315,6 +77401,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1337107854
 BoxCollider:
@@ -77426,6 +77513,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1339489127
 BoxCollider:
@@ -77683,7 +77771,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 175
+      value: 174
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -78020,6 +78108,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1350971559
 BoxCollider:
@@ -78267,7 +78356,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 80
+      value: 79
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
         type: 3}
@@ -78521,7 +78610,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 111
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -79039,6 +79128,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1373219411
 BoxCollider:
@@ -79217,7 +79307,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 137
+      value: 136
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -79536,6 +79626,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1376218793
 BoxCollider:
@@ -79601,6 +79692,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1376262596
 BoxCollider:
@@ -79836,6 +79928,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1379713798
 BoxCollider:
@@ -80509,6 +80602,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1390736615
 BoxCollider:
@@ -81235,6 +81329,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1404397429
 BoxCollider:
@@ -81321,6 +81416,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1405325106
 BoxCollider:
@@ -81774,6 +81870,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1411662814
 BoxCollider:
@@ -82062,6 +82159,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1416026046
 BoxCollider:
@@ -82260,6 +82358,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1418539307
 BoxCollider:
@@ -82675,7 +82774,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fdf47710c9fa85845b6b2cc6672431c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 179
+      value: 178
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdf47710c9fa85845b6b2cc6672431c2,
         type: 3}
@@ -82775,7 +82874,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 105
+      value: 104
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -82976,6 +83075,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1427883544
 BoxCollider:
@@ -84110,7 +84210,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 127
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -84373,6 +84473,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1450790250
 BoxCollider:
@@ -84537,7 +84638,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 97
+      value: 96
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -85285,7 +85386,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -85391,6 +85492,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1466758766
 BoxCollider:
@@ -85613,6 +85715,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1467567777
 BoxCollider:
@@ -86288,6 +86391,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1482170947
 BoxCollider:
@@ -86476,7 +86580,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 168
+      value: 167
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -86891,7 +86995,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -86984,6 +87088,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1493314029
 BoxCollider:
@@ -87140,7 +87245,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 76
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -87736,6 +87841,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1511354580
 BoxCollider:
@@ -88011,6 +88117,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1515263321
 BoxCollider:
@@ -88530,7 +88637,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 72
+      value: 71
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -88646,6 +88753,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1526240348
 BoxCollider:
@@ -88899,7 +89007,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 77
+      value: 76
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
         type: 3}
@@ -88989,7 +89097,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 132
+      value: 131
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -89146,7 +89254,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 128
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -89258,6 +89366,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1533445526
 BoxCollider:
@@ -95459,7 +95568,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 49
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -95717,7 +95826,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 176
+      value: 175
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -95963,7 +96072,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 124
+      value: 123
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -96038,7 +96147,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 88
+      value: 87
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -96125,6 +96234,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1571930828
 BoxCollider:
@@ -96359,6 +96469,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1574597687
 BoxCollider:
@@ -96764,7 +96875,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 109
+      value: 108
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -97406,7 +97517,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 96
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -97595,6 +97706,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1598710534
 BoxCollider:
@@ -97877,6 +97989,7 @@ MonoBehaviour:
   gridManager: {fileID: 1983200312}
   mainCamera: {fileID: 159834927}
   unit: {fileID: 1164004823}
+  cursorFramePrefab: {fileID: 0}
   movableBlocks: []
 --- !u!4 &1600691144
 Transform:
@@ -98102,6 +98215,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1602371823
 BoxCollider:
@@ -98517,7 +98631,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 87
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -98736,6 +98850,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1612062652
 BoxCollider:
@@ -98801,6 +98916,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1612796518
 BoxCollider:
@@ -98875,7 +98991,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -99357,6 +99473,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1620754064
 BoxCollider:
@@ -99529,6 +99646,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1622930408
 BoxCollider:
@@ -100064,7 +100182,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fdf47710c9fa85845b6b2cc6672431c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 177
+      value: 176
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdf47710c9fa85845b6b2cc6672431c2,
         type: 3}
@@ -100575,6 +100693,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1644827196
 BoxCollider:
@@ -101193,6 +101312,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1654424389
 BoxCollider:
@@ -101420,6 +101540,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1657262801
 BoxCollider:
@@ -101560,7 +101681,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 54
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -102365,7 +102486,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 165
+      value: 164
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -102795,6 +102916,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1668371680
 BoxCollider:
@@ -103031,7 +103153,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 157
+      value: 156
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -103168,6 +103290,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1675968189
 BoxCollider:
@@ -103466,7 +103589,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2c3152900e34bfc48995da4ef83d8bc3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 183
+      value: 182
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c3152900e34bfc48995da4ef83d8bc3,
         type: 3}
@@ -103834,7 +103957,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 134
+      value: 133
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -104053,6 +104176,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1690048258
 BoxCollider:
@@ -104191,7 +104315,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 143
+      value: 142
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -104376,6 +104500,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1695594449
 BoxCollider:
@@ -104570,7 +104695,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 90
+      value: 89
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -104705,6 +104830,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1697910987
 BoxCollider:
@@ -105210,7 +105336,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -105586,6 +105712,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1712723558
 BoxCollider:
@@ -105667,7 +105794,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 123
+      value: 122
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -105849,7 +105976,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 119
+      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -106062,6 +106189,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1720304907
 BoxCollider:
@@ -106444,7 +106572,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 47
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -106560,6 +106688,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1732336519
 BoxCollider:
@@ -106838,7 +106967,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 130
+      value: 129
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -107136,7 +107265,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 73
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -107465,7 +107594,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 113
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -107732,7 +107861,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 81
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -108464,6 +108593,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1767024668
 BoxCollider:
@@ -109273,7 +109403,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 126
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -109792,7 +109922,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 98
+      value: 97
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -110467,6 +110597,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1815724450
 BoxCollider:
@@ -110491,7 +110622,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 114
+      value: 113
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -111590,6 +111721,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1842547960
 BoxCollider:
@@ -111652,7 +111784,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 120
+      value: 119
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -112304,6 +112436,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1855058895
 BoxCollider:
@@ -112679,7 +112812,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 79
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
         type: 3}
@@ -113505,7 +113638,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 148
+      value: 147
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -114193,6 +114326,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1891485372
 BoxCollider:
@@ -114283,6 +114417,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1892200734
 BoxCollider:
@@ -114589,6 +114724,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1895223239
 BoxCollider:
@@ -114799,6 +114935,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1897765692
 BoxCollider:
@@ -115499,7 +115636,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fdf47710c9fa85845b6b2cc6672431c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 180
+      value: 179
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdf47710c9fa85845b6b2cc6672431c2,
         type: 3}
@@ -115617,6 +115754,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1913730402
 BoxCollider:
@@ -115641,7 +115779,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 78
+      value: 77
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
         type: 3}
@@ -116064,7 +116202,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 170
+      value: 169
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -116733,6 +116871,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1930603315
 BoxCollider:
@@ -117911,7 +118050,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 63
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -118623,6 +118762,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1955661439
 BoxCollider:
@@ -119173,7 +119313,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 93
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -119357,6 +119497,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1970534219
 BoxCollider:
@@ -119422,6 +119563,7 @@ MonoBehaviour:
   isWalkable: 0
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1970890954
 BoxCollider:
@@ -119556,6 +119698,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1971028135
 BoxCollider:
@@ -120630,6 +120773,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &1983948162
 BoxCollider:
@@ -122024,6 +122168,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &2013273073
 BoxCollider:
@@ -122245,6 +122390,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &2017111131
 BoxCollider:
@@ -122281,6 +122427,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &2017773692
 BoxCollider:
@@ -122966,7 +123113,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 95
+      value: 94
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 40fa267d2fac18647add890582e5a8b6,
         type: 3}
@@ -123371,7 +123518,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 65
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -123747,6 +123894,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &2046253270
 BoxCollider:
@@ -123808,6 +123956,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &2047141081
 BoxCollider:
@@ -123901,6 +124050,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &2048712559
 BoxCollider:
@@ -123982,7 +124132,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 108
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -124445,6 +124595,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &2059341335
 BoxCollider:
@@ -125475,7 +125626,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 131
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -126021,6 +126172,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &2083535979
 BoxCollider:
@@ -126121,7 +126273,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 106
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -127218,7 +127370,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 160
+      value: 159
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -127619,6 +127771,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &2110782683
 BoxCollider:
@@ -127802,6 +127955,7 @@ MonoBehaviour:
   isWalkable: 1
   occupantUnit: {fileID: 0}
   isRamp: 0
+  tileEffect: {fileID: 0}
   blockKinds: 0
 --- !u!65 &2114653705
 BoxCollider:
@@ -128412,7 +128566,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 150
+      value: 149
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -128601,7 +128755,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
       propertyPath: m_RootOrder
-      value: 167
+      value: 166
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c12e3fb2e113a4c8c74e6c4c190141,
         type: 3}
@@ -129450,7 +129604,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 55
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 826aac0ca430b09419564f4688537dfb,
         type: 3}
