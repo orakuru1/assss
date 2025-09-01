@@ -39,10 +39,12 @@ public class TileEffectData : ScriptableObject
                 unit.status.defense += value;
                 break; 
             case EffectType.BuffMoveRange:
-                unit.status.moveRange += value;
+                unit.ApplyMoveRangeBonus(value);
                 break;
             case EffectType.BuffAttackRange:
                 unit.status.attackRange += value;
+                break;case EffectType.None:
+                unit.ResetToBase();
                 break;
         }
     }
@@ -56,6 +58,12 @@ public class TileEffectData : ScriptableObject
                 break;
             case EffectType.BuffDefense:
                 unit.status.defense -= value;
+                break;
+            case EffectType.BuffMoveRange:
+                unit.ResetToBase();
+                break;
+            case EffectType.BuffAttackRange:
+                unit.status.attackRange += value;
                 break;
         }
     }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5984ffb22cbb2149aaacb284922ffba, type: 3}
   m_Name: FireTile
   m_EditorClassIdentifier: 
-  effectType: 0
-  value: 0
-  applyEachTurn: 1
+  effectType: 5
+  value: 1
+  applyEachTurn: 0
