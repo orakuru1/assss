@@ -17,12 +17,16 @@ public class AllStatus : MonoBehaviour
     public Slider hpSlider;
     public Text hptext;
     public Slider expSlider;
+    public GameObject levelImage;  //レベルが上がった時ステータスが上がるのを分かりやすくするimage
+    
 
     // Start is called before the first frame update
     void Start()
     {
         currentHP = maxHP;
+        if(levelImage != null) levelImage.SetActive(false);
         UpdateHPBar(currentHP);
+
     }
 
     //ダメージ処理
@@ -57,6 +61,7 @@ public class AllStatus : MonoBehaviour
         speed += 1f;
         currentHP = maxHP; //レベルアップ時に全回復
         expToNextLevel += 5; //次のレベルに必要な経験値を増やす
+        if(levelImage != null) levelImage.SetActive(true);
 
         Debug.Log("レベルアップ! 現在のレベル" + level);
         UpdateHPBar(currentHP);
@@ -84,4 +89,13 @@ public class AllStatus : MonoBehaviour
             expSlider.value = currentExp;
         }
     }
+
+    void Update()
+    {
+        if(Input.GetMouseButton(0))
+        {
+            if(levelImage != null) levelImage.SetActive(false);
+        }
+    }
+
 }

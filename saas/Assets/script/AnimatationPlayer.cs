@@ -9,6 +9,8 @@ public class AnimatationPlayer : MonoBehaviour
     private NavMeshAgent agent;
     private Animator anim;
     private bool isWalking = false;
+
+    public GameObject levelImage;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,7 @@ public class AnimatationPlayer : MonoBehaviour
 
     void Update()
     {
+        if(levelImage.activeSelf) return;
         if(Input.GetMouseButtonDown(0) && !IsPosinterOverUIObject())
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

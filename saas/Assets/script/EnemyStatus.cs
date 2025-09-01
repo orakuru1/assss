@@ -11,6 +11,7 @@ public class EnemyStatus : MonoBehaviour
     public float currentHP;
     public float defense = 0f; //防御力
     public float attack = 3f; //攻撃力
+    public float speed = 1f;
 
     [Header("UI")]
     public Slider hpSlider;
