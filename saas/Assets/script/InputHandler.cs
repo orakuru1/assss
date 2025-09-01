@@ -17,11 +17,15 @@ public class InputHandler : MonoBehaviour
     private List<Vector2Int> currentMovablePositions = new List<Vector2Int>();
     private List<GridBlock> currentAttackableBlocks = new();
 
+    public GameObject moveButton;
+    public GameObject attackButton;
+    public GameObject cancelMoveButton;
+    public GameObject BackButton;
+    public GameObject TurnEndButton;
     public static InputHandler Instance { get; internal set; }
 
     private void Start()
     {
-        
         unit = TurnManager.Instance.CurrentUnit;
 
         if (unit != null)
@@ -38,6 +42,79 @@ public class InputHandler : MonoBehaviour
     {
         if (Instance == null)
             Instance = this;
+    }
+    public void ShowActionButtons()
+    {
+        moveButton.SetActive(true);
+        attackButton.SetActive(true);
+        cancelMoveButton.SetActive(false);
+        BackButton.SetActive(false);
+        TurnEndButton.SetActive(true);
+    }
+    public void HideActionButtons()
+    {
+        moveButton.SetActive(false);
+        attackButton.SetActive(false);
+        cancelMoveButton.SetActive(false);
+        BackButton.SetActive(false);
+        TurnEndButton.SetActive(false);
+    }
+    public void OnMoveButtonPressed()
+    {
+        if (TurnManager.Instance.CurrentUnit != null)
+        {
+            ClearHighlights();
+            ClearAllHighlights();
+            if (TurnManager.Instance.CurrentUnit != null)
+            {
+
+                ShowMoveRange(unit);
+            }
+        }
+        moveButton.SetActive(false);
+        BackButton.SetActive(true);
+    }
+
+    public void OnAttackButtonPressed()
+    {
+        if (TurnManager.Instance.CurrentUnit != null)
+        {
+            ClearHighlights();
+            ClearAllHighlights();
+            ShowAttackRange(unit);
+            return;
+        }
+        attackButton.SetActive(false);
+        BackButton.SetActive(true);
+    }
+
+    public void OnCancelButtonPressed()
+    {
+        ClearHighlights();
+        ClearAllHighlights();
+        if (TurnManager.Instance.CurrentUnit != null)
+        {
+            TurnManager.Instance.CurrentUnit.CancelMove();
+        }
+        moveButton.SetActive(true);
+        cancelMoveButton.SetActive(false);
+    }
+
+    public void OnBackButtonPressed()
+    {
+        ClearHighlights();
+        ClearAllHighlights();
+        BackButton.SetActive(false);
+    }
+    
+    public void OnTurnEndButtonPressed()
+    {
+        ClearHighlights();
+        ClearAllHighlights();
+        if (TurnManager.Instance.CurrentUnit != null)
+        {
+            TurnManager.Instance.EndUnitTurn();
+        }
     }
 
     void Update()
@@ -138,7 +215,7 @@ public class InputHandler : MonoBehaviour
                         unit.MoveTo(clickedBlock.transform.position);
                         ClearAllHighlights();
                         //TurnManager.Instance.EndUnitTurn();
-                        
+                        cancelMoveButton.SetActive(true);
                     }
                     
                     

@@ -236,17 +236,26 @@ public class Unit : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void ApplyMoveRangeBonus(int amount)
+    {
+        baseMoveRange += amount;
+    }
+
     public void CancelMove()
     {
         InputHandler.Instance.ClearHighlights();
         InputHandler.Instance.ClearAllHighlights();
 
+        Vector2Int gridPos = gridManager.GetGridPosition(transform.position);
+        GridBlock block = gridManager.GetBlock(gridPos);
+        block.occupantUnit = null;
+
         transform.position = originalPosition;
 
         ResetToBase();
         // occupantUnit の再登録処理も必要（重要）
-        Vector2Int gridPos = gridManager.GetGridPosition(transform.position);
-        GridBlock block = gridManager.GetBlock(gridPos);
+        gridPos = gridManager.GetGridPosition(transform.position);
+        block = gridManager.GetBlock(gridPos);
         if (block != null)
         {
             block.occupantUnit = this;
@@ -254,7 +263,6 @@ public class Unit : MonoBehaviour
         }
         Debug.Log("移動をキャンセルしました");
         InputHandler.Instance.ClearHighlights();
-        InputHandler.Instance.ShowMoveRange(this);
     }
 
     void Start()

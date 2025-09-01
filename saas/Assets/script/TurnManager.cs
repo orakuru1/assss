@@ -85,12 +85,14 @@ public class TurnManager : MonoBehaviour
             //inputHandler.ShowMoveRange(CurrentUnit);
 
             //HighlightCurrentUnitMoveRange(); // •K—v‚Å‚ ‚ê‚Î
+            InputHandler.Instance.ShowActionButtons();
         }
     }
 
     public void EndUnitTurn()
     {
         turnQueue.Enqueue(CurrentUnit); // Œã‚ë‚É–ß‚·
+        InputHandler.Instance.HideActionButtons();
         StartNextTurn();
     }
 
