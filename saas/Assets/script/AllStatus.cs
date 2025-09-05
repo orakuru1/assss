@@ -15,10 +15,13 @@ public class AllStatus : MonoBehaviour
     public int expToNextLevel = 10; //次のレベルが上がるまでの数
 
     public Slider hpSlider;
-    public Text hptext;
     public Slider expSlider;
     public GameObject levelImage;  //レベルが上がった時ステータスが上がるのを分かりやすくするimage
-    
+    public Text hptext;
+    public Text hpText;
+    public Text atktext;
+    public Text deftext;
+    public Text spdtext;
 
     // Start is called before the first frame update
     void Start()
@@ -61,10 +64,11 @@ public class AllStatus : MonoBehaviour
         speed += 1f;
         currentHP = maxHP; //レベルアップ時に全回復
         expToNextLevel += 5; //次のレベルに必要な経験値を増やす
-        if(levelImage != null) levelImage.SetActive(true);
+        if(levelImage != null) levelImage.SetActive(true); //レベルアップした場合ステータスの上昇テキスト表示
 
         Debug.Log("レベルアップ! 現在のレベル" + level);
         UpdateHPBar(currentHP);
+        UpdateStatusTextWithBonus(maxHP, attack, defense, speed);
     }
 
     // Update is called once per frame
@@ -93,9 +97,30 @@ public class AllStatus : MonoBehaviour
     void Update()
     {
         if(Input.GetMouseButton(0))
+
         {
-            if(levelImage != null) levelImage.SetActive(false);
+            if(levelImage != null) levelImage.SetActive(false);  //クリックでテキスト閉じる
         }
+    }
+
+    void UpdateStatusTextWithBonus(float maxHP, float attack, float defense, float speed)
+    {
+        if(hpText) hpText.text = $"{maxHP}";
+        if(atktext) atktext.text = $"{attack}";
+        if(deftext) deftext.text = $"{defense}";
+        if(spdtext) spdtext.text = $"{speed}";
+
+        StartCoroutine(RemoveBonusText());
+    }
+
+    IEnumerator RemoveBonusText()
+    {
+        yield return new WaitForSeconds(3f);
+
+        if(hpText) hpText.text = $"{maxHP}";
+        if(atktext) atktext.text = $"{attack}";
+        if(deftext) deftext.text = $"{defense}";
+        if(spdtext) spdtext.text = $"{speed}";
     }
 
 }
