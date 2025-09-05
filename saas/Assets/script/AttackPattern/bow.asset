@@ -26,4 +26,5 @@ MonoBehaviour:
   - {x: -3, y: 0}
   - {x: -2, y: -1}
   - {x: -1, y: -2}
+  isAreaAttack: 1
   range: 0
