@@ -79,13 +79,15 @@ public class InputHandler : MonoBehaviour
     {
         if (TurnManager.Instance.CurrentUnit != null)
         {
+            BackButton.SetActive(true);
+            attackButton.SetActive(false);
+            BackButton.SetActive(true);
             ClearHighlights();
             ClearAllHighlights();
             ShowAttackRange(unit);
             return;
         }
-        attackButton.SetActive(false);
-        BackButton.SetActive(true);
+        
     }
 
     public void OnCancelButtonPressed()
@@ -185,14 +187,17 @@ public class InputHandler : MonoBehaviour
                         Unit target = clickedBlock.occupantUnit;
                         Vector2Int unitPos = gridManager.GetGridPosition(unit.transform.position);
                         List<Vector2Int> attackRange = unit.status.attackPattern.GetPattern(unitPos);
+                        List<GridBlock> attackableBlocks = gridManager.GetAttackableBlockss(unitPos, unit.status.attackPattern);
+
                         Vector2Int targetPos = clickedBlock.gridPos;
 
                         if (attackableBlocks.Any(b => b.gridPos == clickedBlock.gridPos))
                         {
                             if (attacker.team != target.team)
                             {
-                                
-                                attacker.Attack(target);
+
+                                //attacker.Attack(target);
+                                attacker.PerformAttack(gridManager);
                                 ClearHighlights();
                                 ClearAllHighlights();
                                 currentAttackableBlocks.Clear();
