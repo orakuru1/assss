@@ -7,4 +7,5 @@ public abstract class AttackPatternBase : ScriptableObject
 
     public abstract List<Vector2Int> GetPattern(Vector2Int center);
     public List<Vector2Int> relativePositions;
+    public bool isAreaAttack;      // ”ÍˆÍUŒ‚ƒtƒ‰ƒO
 }

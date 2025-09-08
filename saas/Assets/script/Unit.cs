@@ -191,6 +191,50 @@ public class Unit : MonoBehaviour
         }
     }
 
+    public void AreaAttack(List<GridBlock> targetBlocks)
+    {
+        foreach (var block in targetBlocks)
+        {
+            if (block.occupantUnit != null && block.occupantUnit.team != this.team)
+            {
+                int damage = Mathf.Max(status.attack - block.occupantUnit.status.defense, 1);
+                block.occupantUnit.TakeDamage(damage);
+            }
+        }
+
+        // ŒoŒ±’l•t—^‚Æ‚©”ÍˆÍUŒ‚ê—p‚Ì‰‰o‚ª‚ ‚ê‚Î‚±‚±‚É’Ç‰Á
+        status.exp += 30;
+        if (status.exp >= 100)
+        {
+            status.exp = 0;
+            LevelUp();
+        }
+    }
+    public void PerformAttack(GridManager gridManager)
+    {
+        Vector2Int pos = gridManager.GetGridPosition(transform.position);
+        var attackBlocks = gridManager.GetAttackableBlockss(pos, status.attackPattern);
+
+        if (status.attackPattern.isAreaAttack)
+        {
+            // ”ÍˆÍUŒ‚
+            AreaAttack(attackBlocks);
+        }
+        else
+        {
+            // ’P‘ÌUŒ‚i—á: Å‰‚ÉŒ©‚Â‚©‚Á‚½“G‚ğUŒ‚j
+            foreach (var block in attackBlocks)
+            {
+                if (block.occupantUnit != null && block.occupantUnit.team != this.team)
+                {
+                    Attack(block.occupantUnit);
+                    break;
+                }
+            }
+        }
+    }
+
+
     public void TakeDamage(int damage)
     {
         int actualDamage = damage;
