@@ -3362,7 +3362,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridManager: {fileID: 175039670}
   hpSlider: {fileID: 357750008}
-  expSlider: {fileID: 0}
   hptext: {fileID: 699158696}
   status:
     unitName: "\u30E6\u30CB\u30C3\u30C8\u540D"
@@ -14102,7 +14101,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridManager: {fileID: 175039670}
   hpSlider: {fileID: 0}
-  expSlider: {fileID: 0}
   hptext: {fileID: 0}
   status:
     unitName: mikata
@@ -30641,9 +30639,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridManager: {fileID: 175039670}
-  hpSlider: {fileID: 1365444725}
-  expSlider: {fileID: 0}
-  hptext: {fileID: 415641008}
+  hpSlider: {fileID: 0}
+  hptext: {fileID: 0}
   status:
     unitName: "\u30E6\u30CB\u30C3\u30C8\u540D"
     exp: 0
@@ -33087,7 +33084,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridManager: {fileID: 175039670}
   hpSlider: {fileID: 0}
-  expSlider: {fileID: 0}
   hptext: {fileID: 0}
   status:
     unitName: teki

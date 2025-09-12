@@ -2,15 +2,18 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.UI;
 
 public class Unit : MonoBehaviour
 {
     public GridManager gridManager;
+    public Slider hpSlider;
+    public Text hptext;
 
     [System.Serializable]
     public class UnitStatus
     {
-        public string unitName = "ƒ†ƒjƒbƒg–¼";
+        public string unitName = "ï¿½ï¿½ï¿½jï¿½bï¿½gï¿½ï¿½";
         public int exp = 0;
         public int level = 1;
         public int maxHP = 20;
@@ -22,11 +25,11 @@ public class Unit : MonoBehaviour
         public float maxStepHeight = 0.5f;
         public int speed = 4;
         public int luck = 1;
-        //ƒŒƒxƒ‹ƒAƒbƒv‚Éã‚ª‚éƒXƒe[ƒ^ƒX‚Ì”{—¦‚ğƒLƒƒƒ‰‚²‚Æ‚É•Ï‚¦‚ê‚é
+        //ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½Aï¿½bï¿½vï¿½ï¿½ï¿½Éã‚ªï¿½ï¿½Xï¿½eï¿½[ï¿½^ï¿½Xï¿½Ì”{ï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚É•Ï‚ï¿½ï¿½ï¿½ï¿½
         public List<float> levelUpMultipliers = new List<float> { 1f, 1.1f, 1.2f, 1.3f };
         public AttackPatternBase attackPattern;
     
-            // UŒ‚”ÍˆÍæ“¾
+            // ï¿½Uï¿½ï¿½ï¿½ÍˆÍæ“¾
             public List<Vector2Int> GetAttackRange(Vector2Int currentPos)
             {
                 return attackPattern.GetPattern(currentPos);
@@ -46,16 +49,16 @@ public class Unit : MonoBehaviour
     public float moveSpeed = 2.0f;
     private bool isMoving = false;
     public List<GridBlock> movableBlocks = new List<GridBlock>();
-    private Vector3 originalPosition; // ˆÚ“®‘O‚ÌˆÊ’u
+    private Vector3 originalPosition; // ï¿½Ú“ï¿½ï¿½Oï¿½ÌˆÊ’u
 
-    #region  //ƒ}ƒXŒø‰Ê‚Ì“K—p
+    #region  //ï¿½}ï¿½Xï¿½ï¿½ï¿½Ê‚Ì“Kï¿½p
     private int baseMaxHP, baseCurrentHP,
                 baseAttack, baseDefense,
                 baseMoveRange, baseAttackRange,
                 baseSpeed, baseLuck;
     private float baseMaxStepHeight;
 
-    //ƒ}ƒXŒø‰Ê‚ğó‚¯‚é‘O‚ÌƒXƒe[ƒ^ƒX
+    //ï¿½}ï¿½Xï¿½ï¿½ï¿½Ê‚ï¿½ï¿½ó‚¯‚ï¿½Oï¿½ÌƒXï¿½eï¿½[ï¿½^ï¿½X
     private void Awake()
     {
         baseMaxHP = status.maxHP;
@@ -68,6 +71,7 @@ public class Unit : MonoBehaviour
         baseSpeed = status.speed;
         baseLuck = status.luck;
         gridManager = FindObjectOfType<GridManager>();
+        UpdateHPBar(status.currentHP);
     }
 
     
@@ -96,10 +100,10 @@ public class Unit : MonoBehaviour
 
         GridBlock currentBlock = gridManager.GetBlock(currentPos);
 
-        // ƒŠƒZƒbƒg
+        // ï¿½ï¿½ï¿½Zï¿½bï¿½g
         ResetToBase();
 
-        // Œø‰Ê‚ğÄ“K—p
+        // ï¿½ï¿½ï¿½Ê‚ï¿½ï¿½Ä“Kï¿½p
         if (currentBlock != null)
         {
             switch (currentBlock.blockKinds)
@@ -159,11 +163,11 @@ public class Unit : MonoBehaviour
 
             transform.position = endPos;
 
-            // Šeƒ}ƒX‚²‚Æ‚É­‚µ‘Ò‚Âi•à‚¢‚Ä‚éŠ´j
+            // ï¿½eï¿½}ï¿½Xï¿½ï¿½ï¿½Æ‚Éï¿½ï¿½ï¿½ï¿½Ò‚Âiï¿½ï¿½ï¿½ï¿½ï¿½Ä‚éŠ´ï¿½j
             yield return new WaitForSeconds(0.05f);
         }
 
-        // ÅŒã‚É occupantUnit ‚ğXV
+        // ï¿½ÅŒï¿½ï¿½ occupantUnit ï¿½ï¿½ï¿½Xï¿½V
         Vector2Int finalPos = gridManager.GetGridPosition(transform.position);
         GridBlock finalBlock = gridManager.GetBlock(finalPos);
         if (finalBlock != null)
@@ -174,7 +178,7 @@ public class Unit : MonoBehaviour
         if(finalBlock.occupantUnit == true)
         {
             
-            TurnManager.Instance.OnPlayerMoveComplete(); //‚±‚±‚Å’Ê’m
+            TurnManager.Instance.OnPlayerMoveComplete(); //ï¿½ï¿½ï¿½ï¿½ï¿½Å’Ê’m
         }
 
     }
@@ -202,7 +206,7 @@ public class Unit : MonoBehaviour
             }
         }
 
-        // ŒoŒ±’l•t—^‚Æ‚©”ÍˆÍUŒ‚ê—p‚Ì‰‰o‚ª‚ ‚ê‚Î‚±‚±‚É’Ç‰Á
+        // ï¿½oï¿½ï¿½ï¿½lï¿½tï¿½^ï¿½Æ‚ï¿½ï¿½ÍˆÍUï¿½ï¿½ï¿½ï¿½pï¿½Ì‰ï¿½ï¿½oï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î‚ï¿½ï¿½ï¿½ï¿½É’Ç‰ï¿½
         status.exp += 30;
         if (status.exp >= 100)
         {
@@ -217,12 +221,12 @@ public class Unit : MonoBehaviour
 
         if (status.attackPattern.isAreaAttack)
         {
-            // ”ÍˆÍUŒ‚
+            // ï¿½ÍˆÍUï¿½ï¿½
             AreaAttack(attackBlocks);
         }
         else
         {
-            // ’P‘ÌUŒ‚i—á: Å‰‚ÉŒ©‚Â‚©‚Á‚½“G‚ğUŒ‚j
+            // ï¿½Pï¿½ÌUï¿½ï¿½ï¿½iï¿½ï¿½: ï¿½Åï¿½ï¿½ÉŒï¿½ï¿½Â‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Gï¿½ï¿½ï¿½Uï¿½ï¿½ï¿½j
             foreach (var block in attackBlocks)
             {
                 if (block.occupantUnit != null && block.occupantUnit.team != this.team)
@@ -239,19 +243,20 @@ public class Unit : MonoBehaviour
     {
         int actualDamage = damage;
         status.currentHP -= actualDamage;
-
-        Debug.Log($"{status.unitName} ‚Í {actualDamage} ƒ_ƒ[ƒW‚ğó‚¯‚½IicHP: {status.currentHP}j");
+        UpdateHPBar(status.currentHP);
+        Debug.Log($"{status.unitName} ï¿½ï¿½ {actualDamage} ï¿½_ï¿½ï¿½ï¿½[ï¿½Wï¿½ï¿½ï¿½ó‚¯‚ï¿½ï¿½Iï¿½iï¿½cHP: {status.currentHP}ï¿½j");
 
         if (status.currentHP <= 0)
         {
             Die();
         }
+        
     }
 
     public void Heal(int amount)
     {
         status.currentHP = Mathf.Clamp(status.currentHP + amount, 0, status.maxHP);
-        Debug.Log($"{status.unitName} ‚Í {amount} ‰ñ•œ‚µ‚½IiŒ»İHP: {status.currentHP}j");
+        Debug.Log($"{status.unitName} ï¿½ï¿½ {amount} ï¿½ñ•œ‚ï¿½ï¿½ï¿½ï¿½Iï¿½iï¿½ï¿½ï¿½ï¿½HP: {status.currentHP}ï¿½j");
     }
 
     public void LevelUp()
@@ -263,7 +268,21 @@ public class Unit : MonoBehaviour
         status.maxHP = Mathf.RoundToInt(baseMaxHP * multiplier);
         status.attack = Mathf.RoundToInt(baseAttack * multiplier);
 
-        Awake(); // V‚µ‚¢base‚©‚çÄ“K—p
+        Awake(); // ï¿½Vï¿½ï¿½ï¿½ï¿½baseï¿½ï¿½ï¿½ï¿½Ä“Kï¿½p
+        
+    }
+
+    void UpdateHPBar(float currentHP)
+    {
+        if(hpSlider != null)
+        {
+            hpSlider.value = (float)status.currentHP / (float)status.maxHP;
+        }
+
+        if(hptext != null)
+        {
+            hptext.text = Mathf.CeilToInt(status.currentHP) + "/" + Mathf.CeilToInt(status.maxHP);
+        }
     }
 
     private void Die()
@@ -275,7 +294,7 @@ public class Unit : MonoBehaviour
             block.occupantUnit = null;
         }
 
-        Debug.Log($"{status.unitName} ‚ÍŒ‚”j‚³‚ê‚Ü‚µ‚½I");
+        Debug.Log($"{status.unitName} ï¿½ÍŒï¿½ï¿½jï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½I");
         TurnManager.Instance.RemoveUnit(this);
         Destroy(gameObject);
     }
@@ -297,7 +316,7 @@ public class Unit : MonoBehaviour
         transform.position = originalPosition;
 
         ResetToBase();
-        // occupantUnit ‚ÌÄ“o˜^ˆ—‚à•K—vid—vj
+        // occupantUnit ï¿½ÌÄ“oï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½vï¿½iï¿½dï¿½vï¿½j
         gridPos = gridManager.GetGridPosition(transform.position);
         block = gridManager.GetBlock(gridPos);
         if (block != null)
@@ -305,7 +324,7 @@ public class Unit : MonoBehaviour
             block.occupantUnit = this;
             UpdateBlockEffect();
         }
-        Debug.Log("ˆÚ“®‚ğƒLƒƒƒ“ƒZƒ‹‚µ‚Ü‚µ‚½");
+        Debug.Log("ï¿½Ú“ï¿½ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½");
         InputHandler.Instance.ClearHighlights();
     }
 
@@ -317,5 +336,6 @@ public class Unit : MonoBehaviour
         {
             block.occupantUnit = this;
         }
+        UpdateHPBar(status.currentHP);
     }
 }
