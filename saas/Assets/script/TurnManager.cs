@@ -27,7 +27,7 @@ public class TurnManager : MonoBehaviour
         StartNextTurn();
     }
 
-    private List<Unit> allUnits = new List<Unit>(); // ’Ç‰Á
+    private List<Unit> allUnits = new List<Unit>(); // ï¿½Ç‰ï¿½
 
     public void InitializeTurnOrder()
     {
@@ -40,10 +40,10 @@ public class TurnManager : MonoBehaviour
     {
         allUnits.Remove(unit);
 
-        // ƒLƒ…[‚ÌÄ\’ziíœ‘ÎÛ‚ğŠÜ‚Ü‚È‚¢‚æ‚¤‚Éj
+        // ï¿½Lï¿½ï¿½ï¿½[ï¿½ÌÄ\ï¿½zï¿½iï¿½íœï¿½ÎÛ‚ï¿½ï¿½Ü‚Ü‚È‚ï¿½ï¿½æ‚¤ï¿½Éj
         turnQueue = new Queue<Unit>(turnQueue.Where(u => u != unit));
 
-        // Œ»İ‚Ìƒ†ƒjƒbƒg‚¾‚Á‚½‚ç‘¦I—¹‚µ‚ÄŸ‚Ö
+        // ï¿½ï¿½ï¿½İ‚Ìƒï¿½ï¿½jï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç‘¦ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½
         if (CurrentUnit == unit)
         {
             StartNextTurn();
@@ -69,9 +69,9 @@ public class TurnManager : MonoBehaviour
         }
         OnTurnStart?.Invoke(CurrentUnit);;
         InputHandler.Instance.unit = CurrentUnit;
-        Debug.Log($"Œ»İ‚Ìs“®ƒ†ƒjƒbƒg: {CurrentUnit.name}i{CurrentUnit.team}j");
-        // ‚±‚±‚ÅUIXV‚âAI‹N“®‚È‚Ç‚µ‚Ä‚à‚æ‚¢
-        // ‚±‚±‚Å“G‚©–¡•û‚©‚ğ”»’è
+        Debug.Log($"ï¿½ï¿½ï¿½İ‚Ìsï¿½ï¿½ï¿½ï¿½ï¿½jï¿½bï¿½g: {CurrentUnit.name}ï¿½i{CurrentUnit.team}ï¿½j");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½UIï¿½Xï¿½Vï¿½ï¿½AIï¿½Nï¿½ï¿½ï¿½È‚Ç‚ï¿½ï¿½Ä‚ï¿½ï¿½æ‚¢
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Å“Gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ğ”»’ï¿½
         if (CurrentUnit.team == Unit.Team.Enemy)
         {
             GridManager gridManager = FindObjectOfType<GridManager>();
@@ -81,17 +81,17 @@ public class TurnManager : MonoBehaviour
         }
         else
         {
-            // –¡•û‚Ì‚Æ‚«‚Í“ü—Íó•t‚È‚Ç
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚Æ‚ï¿½ï¿½Í“ï¿½ï¿½Íï¿½tï¿½È‚ï¿½
             //inputHandler.ShowMoveRange(CurrentUnit);
 
-            //HighlightCurrentUnitMoveRange(); // •K—v‚Å‚ ‚ê‚Î
+            //HighlightCurrentUnitMoveRange(); // ï¿½Kï¿½vï¿½Å‚ï¿½ï¿½ï¿½ï¿½
             InputHandler.Instance.ShowActionButtons();
         }
     }
 
     public void EndUnitTurn()
     {
-        turnQueue.Enqueue(CurrentUnit); // Œã‚ë‚É–ß‚·
+        turnQueue.Enqueue(CurrentUnit); // ï¿½ï¿½ï¿½É–ß‚ï¿½
         InputHandler.Instance.HideActionButtons();
         StartNextTurn();
     }
@@ -112,10 +112,10 @@ public class TurnManager : MonoBehaviour
 
     public void OnPlayerMoveComplete()
     {
-        // ƒnƒCƒ‰ƒCƒgXV‚È‚Ç•K—v‚Å‚ ‚ê‚Î‚±‚±‚Å
+        // ï¿½nï¿½Cï¿½ï¿½ï¿½Cï¿½gï¿½Xï¿½Vï¿½È‚Ç•Kï¿½vï¿½Å‚ï¿½ï¿½ï¿½Î‚ï¿½ï¿½ï¿½ï¿½ï¿½
         //HighlightCurrentUnitMoveRange();
 
-        // “G‚ÌˆÚ“®ˆ—ŠJn
+        // ï¿½Gï¿½ÌˆÚ“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½n
         //StartCoroutine(enemyAI.ExecuteEnemyMove(CurrentUnit, gridManager));
     }
 
