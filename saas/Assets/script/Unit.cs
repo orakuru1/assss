@@ -2,10 +2,13 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.UI;
 
 public class Unit : MonoBehaviour
 {
     public GridManager gridManager;
+    public Slider hpSlider;
+    public Text hptext;
 
     public EnemyCount enemyCount;
 
@@ -70,6 +73,7 @@ public class Unit : MonoBehaviour
         baseSpeed = status.speed;
         baseLuck = status.luck;
         gridManager = FindObjectOfType<GridManager>();
+        UpdateHPBar(status.currentHP);
     }
 
     
@@ -242,6 +246,7 @@ public class Unit : MonoBehaviour
         int actualDamage = damage;
         status.currentHP -= actualDamage;
 
+        UpdateHPBar(status.currentHP);
         Debug.Log($"{status.unitName} �� {actualDamage} �_���[�W���󂯂��I�i�cHP: {status.currentHP}�j");
 
         if (status.currentHP <= 0)
@@ -249,6 +254,7 @@ public class Unit : MonoBehaviour
 
             Die();
         }
+        
     }
 
     public void Heal(int amount)
@@ -267,6 +273,20 @@ public class Unit : MonoBehaviour
         status.attack = Mathf.RoundToInt(baseAttack * multiplier);
 
         Awake(); // �V����base����ēK�p
+        
+    }
+
+    void UpdateHPBar(float currentHP)
+    {
+        if(hpSlider != null)
+        {
+            hpSlider.value = (float)status.currentHP / (float)status.maxHP;
+        }
+
+        if(hptext != null)
+        {
+            hptext.text = Mathf.CeilToInt(status.currentHP) + "/" + Mathf.CeilToInt(status.maxHP);
+        }
     }
 
     private void Die()
@@ -321,5 +341,6 @@ public class Unit : MonoBehaviour
         {
             block.occupantUnit = this;
         }
+        UpdateHPBar(status.currentHP);
     }
 }
