@@ -19,10 +19,11 @@ public class SelectableCharacter : MonoBehaviour
     
     public Slider targetSlider; //減らす対象のスライダー
     public Slider targetSlider1;
-    public float decreaseAmout = 1f; //ボタンを押すごとに減らす量
+    public float decreaseAmout = 1; //ボタンを押すごとに減らす量
     public float animationDuration = 0.5f; //アニメーションの時間（秒）
     // Start is called before the first frame update
 
+/*
     private void OnMouseDown()//プライベートでスタティックはどんな効果？　isSelectedはまだ使っていない？
     {
         if (currentSelected == this)
@@ -40,12 +41,13 @@ public class SelectableCharacter : MonoBehaviour
             {
                 currentSelected.isSelected = false;
             }
-            
+
             currentSelected = this;
             isSelected = true;
             Debug.Log("選択しました");
         }
     }
+*/
 
     private void Attack()
     {
@@ -71,15 +73,15 @@ public class SelectableCharacter : MonoBehaviour
     {
         Debug.Log("攻撃アニメーションが終了！敵をヒットさせます");
 
-        if (anim != null)
+        if (enemyAnim != null)
         {
             enemyAnim.SetTrigger("Hit"); // 敵の「Hit」アニメーションを再生
         }
         
-        if (targetSlider1 != null && !isAnimating)
+        if (targetSlider1 != null && !isAnimating)//HPが減る処理は停止
         {
-            float targetValue = Mathf.Max(targetSlider1.minValue, targetSlider1.value - decreaseAmout);
-            StartCoroutine(AnimateSliderDecrease1(targetSlider1.value, targetValue));
+            //float targetValue = Mathf.Max(targetSlider1.minValue, targetSlider1.value - decreaseAmout);
+            //StartCoroutine(AnimateSliderDecrease1(targetSlider1.value, targetValue));
         }
     }
     

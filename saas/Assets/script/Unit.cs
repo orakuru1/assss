@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.UI;
 
-public class Unit : MonoBehaviour
+public class Unit : MonoBehaviour//敵に攻撃するときのアニメーションを付けたいが、範囲攻撃だと難しいのかな？一人のその敵の位置とこのスクリプトが欲しいな。
 {
     public GridManager gridManager;
     public Slider hpSlider;
@@ -59,6 +59,8 @@ public class Unit : MonoBehaviour
                 baseMoveRange, baseAttackRange,
                 baseSpeed, baseLuck;
     private float baseMaxStepHeight;
+
+    private Animator anim;
 
     //�}�X���ʂ��󂯂�O�̃X�e�[�^�X
     private void Awake()
@@ -187,6 +189,10 @@ public class Unit : MonoBehaviour
 
     public void Attack(Unit target)
     {
+        if (anim != null)
+        {
+            anim.SetTrigger("Attack");
+        }
         int damage = Mathf.Max(status.attack - target.status.defense, 1);
         target.TakeDamage(damage);
         status.exp += 30;
@@ -203,6 +209,10 @@ public class Unit : MonoBehaviour
         {
             if (block.occupantUnit != null && block.occupantUnit.team != this.team)
             {
+                if (anim != null)
+                {
+                    anim.SetTrigger("Attack");
+                }
                 int damage = Mathf.Max(status.attack - block.occupantUnit.status.defense, 1);
                 block.occupantUnit.TakeDamage(damage);
             }
@@ -301,7 +311,12 @@ public class Unit : MonoBehaviour
         Debug.Log($"{status.unitName} �͌��j����܂����I");
         TurnManager.Instance.RemoveUnit(this);
         Destroy(gameObject);
-        enemyCount.CountEnemies();
+
+        if (gameObject.CompareTag("Enemy"))
+        {
+            enemyCount.CountEnemies();
+        }
+       
     }
 
     public void ApplyMoveRangeBonus(int amount)
@@ -342,5 +357,6 @@ public class Unit : MonoBehaviour
             block.occupantUnit = this;
         }
         UpdateHPBar(status.currentHP);
+        anim = GetComponent<Animator>();
     }
 }
