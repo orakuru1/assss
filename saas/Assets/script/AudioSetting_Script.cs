@@ -20,6 +20,9 @@ public class AudioSetting_Script : MonoBehaviour
     // 音量管理システムが開かれているかどうか
     public bool Opened_Audio_Setting = false;
 
+    private AudioSource bgmaudio;
+    private AudioSource seaudio;
+
     void Start()
     {
         // シーン内からSliderを探して取得
@@ -34,7 +37,9 @@ public class AudioSetting_Script : MonoBehaviour
         BGMvolumeSlider.onValueChanged.AddListener(ChangeVolumeBGM);
         SEvolumeSlider.onValueChanged.AddListener(ChangeVolumeSE);
 
-        Play_BGM(0); // 最初にBGMを再生
+        bgmaudio = BGMaudioSource.GetComponent<AudioSource>();
+        seaudio = SEaudioSource.GetComponent<AudioSource>();
+
     }
 
     void Update()
@@ -43,8 +48,8 @@ public class AudioSetting_Script : MonoBehaviour
         Update_Volume.BGMsliderValue = BGMvolumeSlider.value;
         Update_Volume.SEsliderValue = SEvolumeSlider.value;
         // オーディオの音量を設定
-        BGMaudioSource.GetComponent<AudioSource>().volume = Update_Volume.BGMsliderValue;
-        SEaudioSource.GetComponent<AudioSource>().volume = Update_Volume.SEsliderValue;
+        bgmaudio.volume = Update_Volume.BGMsliderValue;
+        seaudio.volume = Update_Volume.SEsliderValue;
         
 
 
