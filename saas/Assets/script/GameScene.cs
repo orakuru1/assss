@@ -22,7 +22,7 @@ public class GameScene : MonoBehaviour
     {
         if(!firstPush)
         {
-            SceneManager.LoadScene("kyara");
+            SceneManager.LoadScene("統合用シーン");
             firstPush = true;
         }
     }
