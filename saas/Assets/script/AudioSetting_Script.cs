@@ -23,7 +23,7 @@ public class AudioSetting_Script : MonoBehaviour
     private AudioSource bgmaudio;
     private AudioSource seaudio;
 
-    void Start()
+    void Start()//SEやBGMをシーンや行動ごとに変えないといけない、アニメーションはイベントで呼ばれたら、鳴らす感じで。（めっちゃ増えそう）
     {
         // シーン内からSliderを探して取得
         BGMvolumeSlider = GameObject.Find("BGMVolumeSlider").GetComponent<Slider>();
